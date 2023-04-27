@@ -1,0 +1,14 @@
+@import "//at.alicdn.com/t/font_2410206_vuzkjonf4s9.css";
+
+@import "//at.alicdn.com/t/c/font_3638201_6hhh0ofc5dm.css";
+
+
+.blog-hero.fullscreen > .mask {
+  background: url("/background/white-001.jpg") center center / cover no-repeat !important;
+}
+
+html[data-theme="dark"] {
+  .blog-hero.fullscreen > .mask {
+    background: url("/background/black-001.jpg") center center / cover no-repeat !important;
+  }
+}
