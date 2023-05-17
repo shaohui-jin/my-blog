@@ -7,7 +7,7 @@ import { defineUserConfig } from '@vuepress/cli';
 import { viteBundler } from '@vuepress/bundler-vite'
 // module.exports = (options, context) => ({
 export default defineUserConfig({
-  base: '/my-blog/', // base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链接中
+  base: '/', // base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链接中
   dest: 'public', // vuepress build 的输出目录
   lang: 'zh-CN',
   title: '繁华中自律，落魄中自愈', // 网站的标题
