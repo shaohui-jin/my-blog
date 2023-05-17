@@ -9,28 +9,16 @@ heroText: 我站在风中，任你大雾四起
 heroFullScreen: true
 tagline: 谋生的路上不抛弃良知 | 谋爱的路上不丢失尊严
 projects:
-- name: vue3-webpack-music
+- name: my-netease-cloud
   icon: link
   desc: 一个模仿网易云音乐的网站✨
-  link: https://jin-shaohui.gitee.io/vue3-webpack-music
-
-- name: simple-webpack
+  link: https://shaohui-jin.github.io/my-netease-cloud
+- name: my-gateway
+  icon: link
+  desc: 一个杂七杂八的门户网站✨
+  link: https://shaohui-jin.github.io/my-gateway
+- name: fork-vite-work
   icon: project
-  desc: Eval实现简易版webpack✨
-  link: https://gitee.com/jin-shaohui/simple-webpack
-
-- name: simple-vue
-  icon: project
-  desc: vue数据劫持✨
-  link: https://gitee.com/jin-shaohui/simple-vue
-
-- name: simple-promise
-  icon: project
-  desc: 简单实现promise✨
-  link: https://gitee.com/jin-shaohui/simple-promise
-
-- name: webpack-demo
-  icon: project
-  desc: 手写webpack编译流程✨
-  link: https://gitee.com/jin-shaohui/webpack-demo
+  desc: 通用中后台✨
+  link: https://shaohui-jin.github.io/fork-vite-work
 ---
