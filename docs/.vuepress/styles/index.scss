@@ -4,11 +4,21 @@
 
 
 .blog-hero.fullscreen > .mask {
-  background: url("/background/white-001.jpg") center center / cover no-repeat !important;
+  background: url('/background/white-001.jpg') center center / cover no-repeat !important;
 }
 
 html[data-theme="dark"] {
   .blog-hero.fullscreen > .mask {
-    background: url("/background/black-001.jpg") center center / cover no-repeat !important;
+    background: url('/background/black-001.jpg') center center / cover no-repeat !important;
   }
 }
+
+li :has(.router-link-active.router-link-exact-active.nav-link.active.sidebar-link.sidebar-page.active) {
+  background: var(--bg-color-secondary);
+}
+
+.sidebar-link:hover {
+  background: var(--bg-color-secondary);
+}
+
+

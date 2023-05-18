@@ -77,4 +77,3 @@ tag:
 - [【设计模式】面试中被问的最频繁的「策略模式」](https://mp.weixin.qq.com/s/d73fuX4Wve2WHxoR4v4tkA)
 - [前端性能优化——包体积压缩82%、打包速度提升65%](https://mp.weixin.qq.com/s/pWoyPMadDw51BaJFECMoBQ)
 - [一起玩转Vue中的JSX：让你一次性掌握它的特性!](https://mp.weixin.qq.com/s/Ear2yeHfbNdnJnP8S2xTIQ)
-- [30 个 Javascript 知识点总结，总有你不会的！](https://mp.weixin.qq.com/s/z3K3P07dzugTtTCw7FZRYQ)

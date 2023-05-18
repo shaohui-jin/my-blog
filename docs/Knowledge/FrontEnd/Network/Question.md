@@ -2,7 +2,7 @@
 title: 服务相关问题
 lang: zh-CN
 date: 2022-05-16 11:26:43
-permalink: /Network/Question/
+permalink: /FrontEnd/Network/Question/
 category: 
   - Question
 tag: 

@@ -2,7 +2,7 @@
 title: 跨域
 lang: zh-CN
 date: 2022-06-01 15:28:16
-permalink: /Network/CrossDomain/
+permalink: /FrontEnd/Network/CrossDomain/
 category: 
   - Network
 tag: 

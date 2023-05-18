@@ -10,13 +10,6 @@ tag:
   - JavaScript
 ---
 
-### 1
-### 2
-### 3
-### 4
-### 5
-### 6
-### 7
 ### Object.keys() 和 Reflect.ownKeys() 差别
 
 ```js
