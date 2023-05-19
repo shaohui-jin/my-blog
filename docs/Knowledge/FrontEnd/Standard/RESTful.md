@@ -5,7 +5,7 @@ date: 2022-05-16 11:21:30
 permalink: /FrontEnd/Standard/RESTful/
 icon: RESTfulAPI
 category: 
-  - RESTful
+  - 前端规范
 tag: 
   - 前端规范
 ---

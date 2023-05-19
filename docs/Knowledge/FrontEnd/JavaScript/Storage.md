@@ -1,5 +1,5 @@
 ---
-title: Storage
+title: 请封装一个Storage
 date: 2022-06-13 15:07:14
 permalink: /FrontEnd/JavaScript/Storage/
 category:

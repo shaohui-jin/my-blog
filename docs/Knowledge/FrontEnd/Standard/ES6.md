@@ -1,5 +1,5 @@
 ---
-title: ES6
+title: ECMAScript 6
 lang: zh-CN
 date: 2022-06-01 11:21:30
 permalink: /FrontEnd/Standard/ES6/

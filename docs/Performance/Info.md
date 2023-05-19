@@ -2,7 +2,7 @@
 title: 浅谈性能优化
 date: 2023-02-24 10:29:48
 icon: info
-permalink: /Performance/info/
+permalink: /FrontEnd/Performance/info/
 category: 
   - 性能优化
 tag: 

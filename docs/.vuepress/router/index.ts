@@ -13,7 +13,6 @@ export const nav: AutoLinkOptions[] = [
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
   { text: '服务器', link: '/Server/', icon: 'iconfont icon-linux' },
-  { text: '性能优化', link: '/Performance/Info/', activeMatch: '/Performance/(.*)$', icon: 'iconfont icon-creative' },
   { text: '推荐', link: '/Recommend/CSS/', activeMatch: '/Recommend/(.*)$', icon: 'iconfont icon-hot' }
 ]
 

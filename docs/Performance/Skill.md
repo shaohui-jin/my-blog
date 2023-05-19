@@ -2,7 +2,7 @@
 title: 性能优化方法
 lang: zh-CN
 date: 2022-06-01 15:08:30
-permalink: /Performance/Skill/
+permalink: /FrontEnd/Performance/Skill/
 icon: enum
 category: 
   - 性能优化
