@@ -64,6 +64,20 @@ export default hopeTheme({
       disableCopy: false,
       disableSelection: false
     },
+    components: {
+      // 你想使用的组件
+      components: [
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
+    },
     mdEnhance: {
       linkCheck: true,
       gfm: true,

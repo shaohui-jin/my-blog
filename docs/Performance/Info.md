@@ -9,44 +9,43 @@ tag:
   - 不咋滴的性能优化
 ---
 
-
 ::: info JavaScript代码
 
 - 作用域 ^随着作用域链中的作用域数量的增加，访问当前作用域以外的变量的时间也在增加。访问全局变量总是要比访问局部变量慢，因为要遍历作用域链。^
   1. 避免全局查找(少用全局变量)：将在一个函数中会多次用到的全局对象存储为局部变量总是没错的。
-  2. 避免 **with** 语句：with会创建自己的作用域，因此会增加其中执行代码的作用域链的长度。
+  2. 避免 **with** 语句：with会创建自己的作用域，因此会增加其中执行代码的 **作用域链的长度**。
 - DOM
   1. 用 **innerHTML** 代替DOM操作，减少DOM操作次数。
   2. 用 **setTimeout** 避免页面失去响应。
-- 用变量保存Ajax请求结果，每次操作本地变量时，不用请求，减少请求次数。
-- 尽量使用事件委托模式，避免批量绑定事件。
+- 用变量保存 **Ajax请求** 结果，操作本地变量时不用请求，减少请求次数。
+- 尽量使用 **事件委托模式**，避免批量绑定事件。
 
 :::
 
 ::: info HTML + css
 
-- 避免 **图片** 和 **iFrame** 等 **src属性** 为空。src属性为空，会重新加载当前页面。
-- 尽量避免在 **HTML标签** 中写 **Style属性**，即内联样式。当需要设置的样式很多时，设置 className而不是直接操作 Style。
-- 避免使用CSS表达式(动态属性)、高级选择器、通配选择器。
-- 多个CSS合并为一个CSS
-- 尽量使用CSS3动画
-- 减少重绘和回流
-- 预加载图片，将样式表放在顶部，将脚本放在底部，加上时间戳。 
-- 避免在页面的主体布局中使用表，表要在其中的内容完全下载之后才会显示出来，显示的速度比DIV+CSS布局慢。 
-- 把CSS放在页面头部把 JavaScript代码放在页面底部（这样避免阻塞页面渲染而使页面出现长时间的空白）
-- 正确使用 display属性， display属性会影响页面的渲染，因此要注意以下几方面。
-  1. display:inline后不应该再使用 width、 height、 margin、 padding和float 。
-  2. display:inline-block后不应该再使用 float。
-  3. display:block后不应该再使用 vertical-align。
-  4. display:table-*后不应该再使用 margin或者float。 
-- 不滥用 float，Float在渲染时计算量比较大，尽量少使用。 
-- 不声明过多的font-size，Web字体需要下载、解析、重绘当前页面，尽量少使用。
-- 当值为0时不需要单位。 
-- 标准化各种浏览器前缀，并注意以下几方面。
+- <Badge text="避免" type="danger" vertical="middle" /> **图片** 和 **iFrame** 等 **src属性** 为空。src属性为空，会 **重新加载** 当前页面。
+- <Badge text="避免" type="danger" vertical="middle" /> **HTML标签** 中写 **Style属性**。当需要设置的样式很多时，设置 **className** 而不是直接操作 **Style**。
+- <Badge text="避免" type="danger" vertical="middle" /> **CSS表达式(动态属性)**、**高级选择器**、**通配选择器**。
+- <Badge text="避免" type="danger" vertical="middle" /> 在页面的主体布局中使用**table**，table要在其中的内容完全下载之后才会显示出来，显示的速度比DIV+CSS布局慢。 
+- <Badge text="不滥用" type="warning" vertical="middle" /> **float**，float在渲染时计算量比较大，尽量少使用。
+- <Badge text="不滥用" type="warning" vertical="middle" /> **font-size**，Web字体需要下载、解析、重绘当前页面，尽量少使用。
+- <Badge text="tip" type="tip" vertical="middle" /> 把 **CSS** 放在 **页面头部** 把 JavaScript代码放在页面底部（这样避免阻塞页面渲染而使页面出现长时间的空白）
+- <Badge text="tip" type="tip" vertical="middle" /> 当值为 **0** 时不需要单位。
+- <Badge text="tip" type="tip" vertical="middle" /> 将样式表放在顶部，将脚本放在底部，加上时间戳。
+- <Badge text="tip" type="tip" vertical="middle" /> 多个CSS合并为一个CSS
+- <Badge text="tip" type="tip" vertical="middle" /> 尽量使用CSS3动画
+- <Badge text="tip" type="tip" vertical="middle" /> 减少重绘和回流
+- <Badge text="tip" type="tip" vertical="middle" /> 正确使用 **display** 属性，display属性会影响页面的渲染，因此要注意以下几方面。
+  1. **display:inline** 后不应该再使用 width、 height、 margin、 padding和float。
+  2. **display:inline-block** 后不应该再使用 float。
+  3. **display:block** 后不应该再使用 vertical-align。
+  4. **display:table-*** 后不应该再使用 margin或者float。 
+- <Badge text="tip" type="tip" vertical="middle" /> 标准化各种浏览器前缀，并注意以下几方面。
   1. 浏览器无前缀应放在最后。 
   2. CSS动画只用（-webkit-无前缀）两种即可。 
   3. 他前缀包括 -webkit-、-moz-、-ms-、无前缀（Opera浏览器改用 blink内核，所以-0-被淘汰）
-- 添加 Favicon.ico，如果没有设置图标ico，则默认的图标会导致发送一个404或者500请求。
+- <Badge text="tip" type="tip" vertical="middle" /> 添加 Favicon.ico，如果没有设置图标ico，则默认的图标会导致发送一个404或者500请求。
 - 通过HTML设置 Viewport元标签， Viewport可以加速页面的渲染，如以下代码所示。
   `<meta name=viewport content=width=device=width,initial-scale=1>`
 - 合理使用 **CSS3动画**，开启硬件加速，CSS中的属性（CSS3 transitions、CSS3 3D transforms、 Opacity、 Canvas、 WebGL、Video）触发 **GPU渲染**。
