@@ -2,7 +2,7 @@
 title: nginx
 lang: zh-CN
 date: 2023-06-20 10:04:14
-permalink: /nginx/
+permalink: /Nginx/
 icon: nginx
 headerDepth: 4
 category: 
