@@ -1,5 +1,5 @@
-import { AutoLinkOptions } from "vuepress-theme-hope";
-import { frontEndSidebar } from "./modules/frontEnd";
+import { AutoLinkOptions } from 'vuepress-theme-hope';
+import { frontEndSidebar, nginxSidebar } from  './modules';
 
 // 重新调整sidebar的侧边栏类型
 type SidebarItem = AutoLinkOptions | Omit<AutoLinkOptions, 'link'> | string;
@@ -12,13 +12,14 @@ export const nav: AutoLinkOptions[] = [
   { text: '设计模式', link: '/DesignPattern/Info/', activeMatch: '/DesignPattern/(.*)$', icon: 'iconfont icon-note' },
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
-  { text: 'Nginx', link: '/Nginx/',  activeMatch: '/Nginx/(.*)$', icon: 'iconfont icon-nginx' },
+  { text: 'Nginx', link: '/Nginx/Function/',  activeMatch: '/Nginx/(.*)$', icon: 'iconfont icon-nginx' },
   { text: '服务器', link: '/Server/', icon: 'iconfont icon-linux' },
   { text: '推荐', link: '/Recommend/CSS/', activeMatch: '/Recommend/(.*)$', icon: 'iconfont icon-hot' }
 ]
 
 export const sidebar: SidebarObjectOptions = {
   ...frontEndSidebar,
+  ...nginxSidebar,
   '/Java/': [
     { text: '后端知识库', icon: 'iconfont icon-java' },
     'Stream/', // Stream
