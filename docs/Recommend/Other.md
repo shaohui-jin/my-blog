@@ -32,8 +32,7 @@ tag:
 
 ## VUE
 - [来吧，解锁vue3全家桶+Ts的正确姿势](https://mp.weixin.qq.com/s/V_YWbswXoea-Em-l_K97sw)  
-- [万万没想到，Vue3 的 setup 还能这么玩](https://mp.weixin.qq.com/s/rJM9OaDI5Hnn-GBR-cT5JA)  
-- [Vue3又出新语法 到底何时才能折腾完？](https://juejin.cn/post/7044077808259170312) 
+- [万万没想到，Vue3 的 setup 还能这么玩](https://mp.weixin.qq.com/s/rJM9OaDI5Hnn-GBR-cT5JA) 
 - [每个人都需要掌握的「Vue2」50个知识点！](https://mp.weixin.qq.com/s/rqoZ5KWqT_1QAx91bJMeIg)    
 - [为什么Proxy一定要配合Reflect使用？](https://mp.weixin.qq.com/s/A1uRq0XwhZPRIZetrEFM0g)
 - [Vue 的计算属性真的会缓存吗？（保姆级教学，原理深入揭秘）](https://juejin.cn/post/6844904120290131982)
@@ -61,7 +60,6 @@ tag:
 - [nginx的功能](https://www.kancloud.cn/hiyang/nginx/364780)  
 - [比较全面的 Dockerfile 文件详解！](https://mp.weixin.qq.com/s/36-rfSJ-PF9pk2qLITQQoQ)  
 - [零基础上手低代码，揭秘如何写一个页面设计器](https://mp.weixin.qq.com/s/XaoHrP_-_hpIK8ixEAi1tA)  
-- [每个前端都值得拥有自己的组件库](https://mp.weixin.qq.com/s/TBhMfyTJD3G0pG9TNKU19A)  
 - [拖拽牛逼，轻松实现一个自由拖拽的组件](https://mp.weixin.qq.com/s/vz9CRQaCXsQfl2JLn1sn5g) 
 - [前端开发者应该知道的 Centos/Docker/Nginx/Node/Jenkins 操作(长文，建议收藏)](https://mp.weixin.qq.com/s/Kyr5TBpMpXTBG9wIhmsPHg)   
 - [Webpack来了！三心教你实现一个Vue-Cli的「基础搭建」](https://mp.weixin.qq.com/s/vYBuO2lOw0k2dBKx9Uy0yw)  
