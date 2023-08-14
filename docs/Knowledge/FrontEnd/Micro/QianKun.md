@@ -19,6 +19,7 @@ tag:
 **qiankun（乾坤）** 就是一款由蚂蚁金服推出的比较成熟的微前端框架，基于 **single-spa** 进行二次开发，用于将Web应用由单一的单体应用转变为多个小型前端应用聚合为一的应用。
 
 ![microInfo](/assets/knowledge/frontEnd/micro/qianKun/microInfo.png)
+<img :src="/assets/knowledge/frontEnd/micro/qianKun/microInfo.png">
 <img :src="$withBase('/assets/knowledge/frontEnd/micro/qianKun/microInfo.png')">
 那么，话不多说，我们的源码解析正式开始。
 
