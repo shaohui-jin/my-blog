@@ -18,9 +18,9 @@ tag:
 
 深度优先遍历的关键就在于如何找到已经探索过节点的上一个节点，也就是如何回溯。
 
-![pt_000](/assets/algorithm/priorityTraversal/pt_000.jpg)
-
 <!-- more -->
+
+<img :src="$withBase('/assets/algorithm/priorityTraversal/pt_000.jpg')">
 
 - 从根节点 1 开始遍历，它相邻的节点有 2，3，4，先遍历节点 2，再遍历 2 的子节点 5，然后再遍历 5 的子节点 9
 - 此时 2 以及下面的节点遍历完后，回到根节点 1，继续遍历 3，6，10，7

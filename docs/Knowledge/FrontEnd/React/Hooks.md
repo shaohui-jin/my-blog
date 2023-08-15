@@ -30,9 +30,9 @@ tag:
 
 注：这里讲解的自定义钩子可能会和 `ahooks`上的略有不同，不会考虑过多的情况，如果用于项目，建议直接使用`ahooks`上的钩子～
 
-![reactHooks](/assets/knowledge/frontEnd/react/hooks/reactHooks.jpg)
-
 <!-- more -->
+
+<img :src="$withBase('/assets/knowledge/frontEnd/react/hooks/reactHooks.jpg')">
 
 ## 自定义Hooks是什么？
 

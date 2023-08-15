@@ -16,7 +16,11 @@ tag:
 因为javascript是一门单线程语言，所以我们可以得出结论：
 
 javascript是按照语句出现的顺序执行的
-看到这里读者要打人了：我难道不知道js是一行一行执行的？还用你说？稍安勿躁，正因为js是一行一行执行的，所以我们以为js都是这样的：
+看到这里读者要打人了：我难道不知道js是一行一行执行的？还用你说？稍安勿躁。。。
+
+<!-- more -->
+
+正因为js是一行一行执行的，所以我们以为js都是这样的：
 
 ```javascript
 let a = '1';
@@ -26,9 +30,7 @@ let b = '2';
 console.log(b);
 ```
 
-![microInfo](/assets/knowledge/frontEnd/javaScript/eventLoop/001.jpg)
-
-<!-- more -->
+<img :src="$withBase('/assets/knowledge/frontEnd/javaScript/eventLoop/001.jpg')" />
 
 然而实际上js是这样的：
 ```javascript
