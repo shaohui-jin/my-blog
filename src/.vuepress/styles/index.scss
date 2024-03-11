@@ -3,12 +3,12 @@
 @import "//at.alicdn.com/t/c/font_3638201_djc8xlf3uas.css";
 
 
-.blog-hero.fullscreen > .mask {
+.vp-blog-hero.fullscreen > .vp-blog-mask {
   background: url('/background/white-001.jpg') center center / cover no-repeat !important;
 }
 
 html[data-theme="dark"] {
-  .blog-hero.fullscreen > .mask {
+  .vp-blog-hero.fullscreen > .vp-blog-mask {
     background: url('/background/black-001.jpg') center center / cover no-repeat !important;
   }
 }
