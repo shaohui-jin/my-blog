@@ -24,7 +24,7 @@ export const frontEndSidebar: SidebarObjectOptions = {
             { text: '2.1.1 - 打钩动画', link: 'CssComponent/Checked/' },
             { text: '2.1.2 - 登录页', link: 'CssComponent/Login/' },
             { text: '2.1.3 - 百叶窗', link: 'CssComponent/Shutters/' },
-            { text: '2.1.4 - 流光按钮', link: 'CssComponent/StreamerButton/' },
+            { text: '2.1.4 - 流光按钮', link: 'CssComponent/StreamerButton' },
           ]
         },
       ]
