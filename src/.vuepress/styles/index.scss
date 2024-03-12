@@ -17,6 +17,11 @@ li :has(.router-link-active.router-link-exact-active.nav-link.active.sidebar-lin
   background: var(--bg-color-secondary);
 }
 
+.vp-article-excerpt div[class*=language-] pre {
+  margin: 0;
+  padding: 0.85rem;
+  width: max-content;
+}
 //.sidebar-link:hover {
 //  background: var(--bg-color-secondary);
 //}

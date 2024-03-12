@@ -47,7 +47,6 @@ export const frontEndSidebar: SidebarObjectOptions = {
           text: '4.1 - 理论知识',
           collapsible: true,
           children: [
-            { text: '4.1.1 - JavaScript 执行机制', link: 'JavaScript/EventLoop/' },
             { text: '4.1.2 - Reflect', link: 'JavaScript/Reflect/' },
             { text: '4.1.3 - 面试问题', link: 'JavaScript/Question/' },
           ]

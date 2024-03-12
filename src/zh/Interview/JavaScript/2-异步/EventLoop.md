@@ -1,8 +1,8 @@
 ---
 title: JavaScript 执行机制
 lang: zh-CN
-date: 2022-06-01 16:15:33
-permalink: /FrontEnd/JavaScript/EventLoop/
+date: 2024-03-12 11:45:33
+permalink: /Interview/JavaScript/EventLoop/
 category: 
   - JavaScript
 tag: 

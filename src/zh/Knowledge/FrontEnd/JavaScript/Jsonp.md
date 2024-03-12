@@ -10,7 +10,7 @@ tag:
   - JavaScript
 ---
 
-[^跨域]: [跨域可阅读这篇文章](/Network/CrossDomain/)
+[^跨域]: [跨域可阅读这篇文章](/FrontEnd/Network/CrossDomain/)
 
 我们都知道， `Ajax` 请求是不能跨域[^跨域]的，无论是 `静态页面` 、 `动态网页` 、  `web服务`等，只要是跨域请求，一律都不允许通过浏览器跨域的`检测`和`阻拦`。
 

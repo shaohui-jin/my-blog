@@ -1,6 +1,4 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbar } from "./navbar";
-import { zhSidebar } from "./sidebar";
 import { nav, sidebar } from "./router";
 import { MR_HOPE_AVATAR } from "./logo";
 
@@ -118,6 +116,7 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       mark: true,
+      footnote: true,
       stylize: [
         {
           matcher: "Recommended",
