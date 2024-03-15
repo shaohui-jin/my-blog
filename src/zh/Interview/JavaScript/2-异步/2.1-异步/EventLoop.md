@@ -1,5 +1,5 @@
 ---
-title: JavaScript 执行机制
+title: 事件循环
 lang: zh-CN
 date: 2024-03-12 11:45:33
 permalink: /Interview/JavaScript/EventLoop/

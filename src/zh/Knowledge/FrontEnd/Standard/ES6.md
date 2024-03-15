@@ -2,12 +2,12 @@
 title: ECMAScript 6
 lang: zh-CN
 date: 2022-06-01 11:21:30
-permalink: /FrontEnd/Standard/ES6/
+permalink: /Interview/JavaScript/ES6/
 icon: es6
 category: 
   - ECMAScript
 tag: 
-  - 前端规范
+  - ECMAScript
 ---
 
 ECMAScript 6（以下简称ES6）是JavaScript语言的下一代标准。因为当前版本的ES6是在2015年发布的，所以又称ECMAScript 2015。

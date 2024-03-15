@@ -1,5 +1,5 @@
 ---
-title: 异步流程
+title: 异步
 lang: zh-CN
 date: 2024-03-12 11:45:33
 permalink: /Interview/JavaScript/Async/

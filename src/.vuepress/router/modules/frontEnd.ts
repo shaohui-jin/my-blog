@@ -8,7 +8,6 @@ export const frontEndSidebar: SidebarObjectOptions = {
       collapsible: true,
       children: [
         { text: '1.1 - HTML规范指南', link: 'Standard/HTML/' },
-        { text: '1.2 - ECMAScript 6', link: 'Standard/ES6/' },
         { text: '1.3 - RESTful API', link: 'Standard/RESTful/' },
       ]
     },
