@@ -94,8 +94,7 @@ export const frontEndSidebar: SidebarObjectOptions = {
           collapsible: true,
           children: [
             { text: '6.1.1 - 生命周期', link: 'Vue/LifeCycle/' },
-            { text: '6.1.2 - 组件通讯方式', link: 'Vue/Communicate/' },
-            { text: '6.1.3 - 面试问题', link: 'Vue/Question/' },
+            { text: '6.1.2 - 面试问题', link: 'Vue/Question/' },
           ]
         },
         {
@@ -135,31 +134,31 @@ export const frontEndSidebar: SidebarObjectOptions = {
         { text: '7.1 - 浅谈12个Hooks', link: 'React/Hooks/' },
       ]
     },
+    // {
+    //   text: '8 - 微前端',
+    //   icon: 'iconfont icon-wu',
+    //   collapsible: true,
+    //   children: [
+    //     { text: '8.1 - 乾坤', link: 'Micro/QianKun/' },
+    //   ]
+    // },
     {
-      text: '8 - 微前端',
-      icon: 'iconfont icon-wu',
-      collapsible: true,
-      children: [
-        { text: '8.1 - 乾坤', link: 'Micro/QianKun/' },
-      ]
-    },
-    {
-      text: '9 - 浏览器',
+      text: '8 - 浏览器',
       icon: 'iconfont icon-liulanqi',
       collapsible: true,
       children: [
-        { text: '9.1 - 浏览器缓存', link: 'Network/BrowserCache/' },
-        { text: '9.2 - 跨域', link: 'Network/CrossDomain/' },
-        { text: '9.3 - 面试问题', link: 'Network/Question/' },
+        { text: '8.1 - 浏览器缓存', link: 'Network/BrowserCache/' },
+        { text: '8.2 - 跨域', link: 'Network/CrossDomain/' },
+        { text: '8.3 - 面试问题', link: 'Network/Question/' },
       ]
     },
     {
-      text: '10 - 性能优化',
+      text: '9 - 性能优化',
       icon: 'iconfont icon-creative',
       collapsible: true,
       children: [
-        { text: '10.1 - 浅谈性能优化', link: 'Performance/info/' },
-        { text: '10.2 - 性能优化方法', link: 'Performance/Skill/' },
+        { text: '9.1 - 浅谈性能优化', link: 'Performance/info/' },
+        { text: '9.2 - 性能优化方法', link: 'Performance/Skill/' },
       ]
     },
   ],

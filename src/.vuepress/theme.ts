@@ -10,8 +10,8 @@ export default hopeTheme({
     url: "https://shaohui-jin.github.io"
   },
 
-  // iconPrefix: "iconfont icon-",
-  iconAssets: "fontawesome-with-brands",
+  iconPrefix: "iconfont icon-",
+  // iconAssets: "fontawesome-with-brands",
 
   logo: "/logo/logo.gif",
 

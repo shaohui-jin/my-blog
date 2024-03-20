@@ -5,6 +5,8 @@ export const interviewSidebar: SidebarObjectOptions = {
     {
       text: 'JavaScript',
       collapsible: true,
+      icon: 'iconfont icon-javascript',
+      activeMatch: '/Interview/JavaScript/(.*)$',
       children: [
         {
           text: '1 - 基础',
@@ -45,8 +47,37 @@ export const interviewSidebar: SidebarObjectOptions = {
             { text: '3.1 - ECMAScript 6', link: 'JavaScript/ES6/' },
           ]
         },
-        // { text: '1.2 - ECMAScript 6', link: 'Standard/ES6/' },
-        // { text: '1.3 - RESTful API', link: 'Standard/RESTful/' },
+      ]
+    },
+    {
+      text: '框架',
+      collapsible: true,
+      activeMatch: '/Interview/Framework/(.*)$',
+      children: [
+        {
+          text: '1 - Vue',
+          collapsible: true,
+          activeMatch: '/Interview/Framework/Vue/(.*)$',
+          children: [
+            { text: '1.1 - 通讯方式', link: 'Framework/Vue/Communication/' },
+          ]
+        },
+        {
+          text: '2 - React',
+          collapsible: true,
+          activeMatch: '/Interview/Framework/React/(.*)$',
+          children: [
+            { text: '2.1 - 通讯方式', link: 'Framework/React/Communication/' },
+          ]
+        },
+        {
+          text: '3 - 微前端',
+          collapsible: true,
+          activeMatch: '/Interview/Framework/Micro/(.*)$',
+          children: [
+            { text: '2.1 - 通讯方式', link: 'Framework/Micro/QianKun/' },
+          ]
+        },
       ]
     }
   ],
