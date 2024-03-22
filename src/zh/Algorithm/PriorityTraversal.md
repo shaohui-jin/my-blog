@@ -20,18 +20,18 @@ tag:
 
 <!-- more -->
 
-<img :src="$withBase('/assets/algorithm/priorityTraversal/pt_000.jpg')">
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Algorithm/深度优先遍历节点图.231mqdnw1s.webp "深度优先遍历节点图")
 
 - 从根节点 1 开始遍历，它相邻的节点有 2，3，4，先遍历节点 2，再遍历 2 的子节点 5，然后再遍历 5 的子节点 9
 - 此时 2 以及下面的节点遍历完后，回到根节点 1，继续遍历 3，6，10，7
 - 此时 3 以及下面的节点遍历完后，回到根节点 1，继续遍历 4，8
 - 完整的遍历顺序图如下：
 
-<img :src="$withBase('/assets/algorithm/priorityTraversal/pt_001.jpg')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Algorithm/深度优先遍历顺序图.54xirlp88w.webp "深度优先遍历顺序图")
 
 另一个利用栈的动图描述：
 
-<img :src="$withBase('/assets/algorithm/priorityTraversal/pt_002.gif')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Algorithm/深度优先遍历栈动态图.7awxddgvzz.gif "深度优先遍历栈动态图")
 
 ### 递归实现
 
@@ -82,13 +82,13 @@ public static void dfs(TreeNode root) {
 
 广度优先遍历（Breath First Search，简称 BFS）一层一层遍历，每一层得到的所有新节点，要用队列存储起来以备下一层遍历的时候再遍历。
 
-<img :src="$withBase('/assets/algorithm/priorityTraversal/pt_003.gif')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Algorithm/广度优先遍历顺序动图.9gwbz58jr1.gif "广度优先遍历顺序动图")
 
 可以看出，遍历的顺序先是 2，3，4，接着是 5，6，7，8，最后是 9，10。属于一层一层遍历。
 
 另一个利用队列的动图描述：
 
-<img :src="$withBase('/assets/algorithm/priorityTraversal/pt_004.gif')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Algorithm/广度优先遍历队列动图.7zq6xe4f0c.gif "广度优先遍历队列动图")
 
 深度优先遍历用的是栈，而广度优先遍历要用队列来实现。
 

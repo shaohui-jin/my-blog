@@ -49,7 +49,7 @@ SVG 是 `Scalable Vector Graphics` 的缩写，意为`可缩放矢量图形`。�
 
 这里直接放一张 Can I Use 的详细兼容表。
 
-<img :src="$withBase('/assets/knowledge/frontEnd/svg/canIUse.png')"/>
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/CanIUse/svg.8ad0qqnzlg.webp " " =800x)
 
 ## 语法
 

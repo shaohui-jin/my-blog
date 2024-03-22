@@ -23,29 +23,29 @@ export const sidebar: SidebarObjectOptions = {
   ...interviewSidebar,
   ...nginxSidebar,
   '/Java/': [
-    { text: '后端知识库', icon: 'iconfont icon-java' },
+    // { text: '后端知识库', icon: 'iconfont icon-java' },
     'Stream/', // Stream
     'Lambda/', // Lambda
     'Utils/', // Utils
   ],
   '/DesignPattern/': [
-    { text: '设计模式', icon: 'iconfont icon-note' },
+    // { text: '设计模式', icon: 'iconfont icon-note' },
     'Info/', // 简单介绍
     'Observer/', // 观察者模式
   ],
   '/Algorithm/': [
-    { text: '常用算法', icon: 'iconfont icon-function' },
+    // { text: '常用算法', icon: 'iconfont icon-function' },
     'Dichotomy/', // 二分查找理论
     'DynamicProgram/', // 动态规划算法
     'PriorityTraversal/', // 优先遍历算法
   ],
   '/Performance/': [
-    { text: '性能优化', icon: 'iconfont icon-creative' },
+    // { text: '性能优化', icon: 'iconfont icon-creative' },
     'Info/',
     'Skill/',
   ],
   '/Recommend': [
-    { text: '推荐', icon: 'iconfont icon-hot' },
+    // { text: '推荐', icon: 'iconfont icon-hot' },
     'CSS/',
     'Other/',
   ],

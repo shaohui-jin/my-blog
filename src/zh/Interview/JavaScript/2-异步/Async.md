@@ -11,7 +11,7 @@ tag:
 
 ## 简述
 
-![浏览器进程模型](https://shaohui-jin.github.io/picx-images-hosting/blog/浏览器进程模型.6pn9qxux5f.webp "浏览器进程模型" =800x)
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/浏览器进程模型.6pn9qxux5f.webp "浏览器进程模型" =800x)
 
 JS是一门单线程的语言，这是因为它运行在浏览器的 **渲染主线程** 中，而 **渲染主线程** 只有一个。
 

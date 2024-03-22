@@ -63,7 +63,7 @@ export const interviewSidebar: SidebarObjectOptions = {
           collapsible: true,
           activeMatch: '/Interview/Framework/Micro/(.*)$',
           children: [
-            { text: '2.1 - 通讯方式', link: 'Framework/Micro/QianKun/' },
+            { text: '3.1 - 乾坤', link: 'Framework/Micro/QianKun/' },
           ]
         },
       ]

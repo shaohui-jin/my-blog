@@ -114,6 +114,7 @@ export default hopeTheme({
       include: true,
       mark: true,
       footnote: true,
+      vuePlayground: true,
       figure: true, // 启用 figure
       imgLazyload: true, // 启用图片懒加载
       imgMark: true, // 启用图片标记

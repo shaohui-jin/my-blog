@@ -42,7 +42,7 @@ Git是一个分布式代码管理工具，在讨论分布式之前避免不了�
 
 在Git中每次提交都会生成一个节点,而每个节点都会有一个哈希值作为唯一标示，多次提交会形成一个线性节点链（不考虑merge的情况），如图
 
-<img :src="$withBase('/assets/git/1-1.jpg')" alt="1-1" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/1-1.4jnv5bihaq.webp "1-1" =800x)
 
 > 节点上方是通过 SHA1计算的哈希值
 
@@ -77,7 +77,7 @@ HEAD是Git中非常重要的一个概念，你可以称它为指针或者引用�
 
 面对上面的问题通过引入分支概念便可优雅的解决，如图
 
-<img :src="$withBase('/assets/git/2-1.jpg')" alt="2-1" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/2-1.1zi0soiioj.webp "2-1" =800x)
 
 > 先看左边示意图，假设C2节点既是v1.0版本代码，上线后在C2的基础上新建一个分支ft-1.0
 >
@@ -177,11 +177,11 @@ git merge 分支名/节点哈希值
 
 如果需要合并的分支完全领先于当前分支，如图所示
 
-<img :src="$withBase('/assets/git/3-1.jpg')" alt="3-1" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/3-1.231mqeblec.webp "3-1" =800x)
 
 由于分支ft-1完全领先分支ft-2即ft-1完全包含ft-2，所以ft-2执行了“git merge ft-1”后会触发fast forward(快速合并)，此时两个分支指向同一节点，这是最理想的状态。但是实际开发中我们往往碰到是是下面这种情况：如图3-2(左)
 
-<img :src="$withBase('/assets/git/3-2.jpg')" alt="3-2" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/3-2.wibhsmot0.webp "3-2" =800x)
 
 这种情况就不能直接合了，当ft-2执行了“git merge ft-1”后Git会将节点C3、C4合并随后生成一个新节点C5，最后将ft-2指向C5 如图
 
@@ -199,7 +199,7 @@ git rebase 分支名/节点哈希值
 
 与merge不同的是rebase合并看起来不会产生新的节点(实际上是会产生的，只是做了一次复制)，而是将需要合并的节点直接累加 如图
 
-<img :src="$withBase('/assets/git/3-3.jpg')" alt="3-3" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/3-3.839sv4l72t.webp "3-3" =800x)
 
 当左边示意图的ft-1.0执行了git rebase master后会将C4节点复制一份到C3后面，也就是C4'，C4与C4'相对应，但是哈希值却不一样。
 
@@ -227,7 +227,7 @@ cherry-pick的合并不同于merge和rebase，它可以选择某几个节点进�
 git cherry-pick 节点哈希值
 ```
 
-<img :src="$withBase('/assets/git/3-4.jpg')" alt="3-4" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/3-4.3uullauyae.webp "3-4" =800x)
 
 假设当前分支是master，执行了git cherry-pick C3(哈希值)，C4(哈希值)命令后会直接将C3、C4节点抓过来放在后面，对应C3'和C4'
 
@@ -281,7 +281,7 @@ git clone 仓库地址
 前面的章节我也有提到过，clone不仅仅是复制代码，它还会把远程仓库的引用(分支/HEAD)一并取下保存在本地，如图所示：
 
 
-<img :src="$withBase('/assets/git/3-5.jpg')" alt="3-5" style="zoom: 50%;" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Git/3-5.8vmocv1st2.webp "3-5" =800x)
 
 其中origin/master和origin/ft-1为远程仓库的分支，而远程的这些引用状态是不会实时更新到本地的，比如远程仓库origin/master分支增加了一次提交，此时本地是感知不到的，所以本地的origin/master分支依旧指向C4节点。我们可以通过fetch命令来手动更新远程仓库状态
 

@@ -167,7 +167,7 @@ Cache-Control: public,max-age=300
 基于上面的这些指令，我们可以将它们进行组合，达到多个目的， 不同的效果。
 有一张来自[《浪里行舟-深入理解浏览器的缓存机制》](https://www.jianshu.com/p/54cc04190252)中的图表述的非常好:
 
-<img :src="$withBase('/assets/knowledge/frontEnd/network/browserCache/001.jpg')">
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/BrowserCache/001.6m3ntj79wn.webp " " =800x)
 
 #### Expires和Cache-control的对比
 - Expires产于HTTP/1。0，Cache-control产于HTTP/1。1;
@@ -206,7 +206,7 @@ Cache-Control: public,max-age=300
 6. 对比结果相同则返回304和一个空的响应体，告诉浏览器从自己(浏览器)的缓存中拿
 7. 对比结果不同(If-Modified-Since < 服务器资源最后修改时间)，则表示资源被修改了，则返回200和最新的资源文件(当然还包括最新的Last-Modefied)
 
-<img :src="$withBase('/assets/knowledge/frontEnd/network/browserCache/002.jpg')">
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/BrowserCache/002.2h82hfa3u2.webp " " =800x)
 
 #### ETag 与 If-None-Match
 
@@ -222,7 +222,7 @@ ETag其实与Last-Modefied的原理差不多，不过它不是根据资源的最
 
 如下图:
 
-<img :src="$withBase('/assets/knowledge/frontEnd/network/browserCache/003.jpg')">
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/BrowserCache/003.3nrdq0z0fh.webp " " =800x)
 
 #### 两者对比
 

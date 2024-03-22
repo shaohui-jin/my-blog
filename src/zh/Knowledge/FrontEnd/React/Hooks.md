@@ -32,7 +32,7 @@ tag:
 
 <!-- more -->
 
-<img :src="$withBase('/assets/knowledge/frontEnd/react/hooks/reactHooks.jpg')">
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/React/reactHooks.7awxdknv83.webp " " =800x)
 
 ## 自定义Hooks是什么？
 
