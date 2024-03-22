@@ -153,4 +153,4 @@ function off(eventName, fn) {
 
 - 最后的结果是：
 
-<img :src="$withBase('/assets/designPattern/observer/001.jpg')">
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/DesignPattern/observer_001.7i0593ia03.webp " " =800x)

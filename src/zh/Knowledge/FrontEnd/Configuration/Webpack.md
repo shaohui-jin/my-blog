@@ -85,7 +85,7 @@ d
 
 让我们来创建这样一个目录:
 
-<img :src="$withBase('/assets/knowledge/frontEnd/configuration/webpack/fileDirectory.jpg')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Webpack/fileDirectory.77dbfxn0wu.webp " " =800x)
 
 ## 初始化参数阶段
 

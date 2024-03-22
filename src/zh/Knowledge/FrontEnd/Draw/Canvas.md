@@ -149,7 +149,7 @@ export default {
 
 Canvas 使用的是 W3C 坐标系 ，也就是遵循我们屏幕、报纸的阅读习惯，`从上往下，从左往右`。
 
-<img :src="$withBase('/assets/knowledge/frontEnd/canvas/KFC_001.jpg')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Canvas/KFC_001.8hg8m92w1k.webp " " =800x)
 
 W3C 坐标系 和 数学直角坐标系 的 `X轴` 是`一样的`，只是 `Y轴` 的`方向相反`。
 
@@ -213,7 +213,7 @@ export default {
 
 明明使用的方法都是一样的，只是第二条直线的 `Y轴` 的值是有`小数点`。
 
-<img :src="$withBase('/assets/knowledge/frontEnd/canvas/KFC_002.jpg')" />
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Canvas/KFC_002.1sesxi5rco.webp " " =800x)
 
 线的`中心点`会和`画布像素点`的底部对齐，所以会线`中间是黑色`的，但由于`一个像素不能再切割`了，所以会有`半个像素`被`染色`，就变成了`浅灰色`。
 

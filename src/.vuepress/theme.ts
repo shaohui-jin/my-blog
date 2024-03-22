@@ -13,7 +13,7 @@ export default hopeTheme({
   iconPrefix: "iconfont icon-",
   // iconAssets: "fontawesome-with-brands",
 
-  logo: "/logo/logo.gif",
+  logo: "https://shaohui-jin.github.io/picx-images-hosting/blog/Logo/User.73tpi84jwb.gif",
 
   repo: 'https://github.com/shaohui-jin/shaohui-jin.github.io',
   repoDisplay: false,

@@ -11,7 +11,8 @@ tag:
 ---
 
 ## 远程连接问题
-<img :src="$withBase('/assets/server/001.jpg')" />
+
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Linux/001.231mqnozjx.webp " " =800x)
 
 修改登录客户端，即本地计算机的设置。
 运行gpedit.msc打开本地组策略编辑器，依次展开“计算机配置”->“管理模板”->“系统”->“凭据分配”，选择设置项： 加密 Oracle 修正
