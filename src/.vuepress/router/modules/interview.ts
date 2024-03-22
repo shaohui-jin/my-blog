@@ -8,27 +8,14 @@ export const interviewSidebar: SidebarObjectOptions = {
       icon: 'iconfont icon-javascript',
       activeMatch: '/Interview/JavaScript/(.*)$',
       children: [
+        { text: '1 - 闭包', link: 'JavaScript/Closure/' },
         {
-          text: '1 - 基础',
+          text: '2 - 同步、异步',
           collapsible: true,
           children: [
-            { text: '1.1 - 闭包', link: 'JavaScript/Closure/' },
-            { text: '1.2 - 类继承', link: 'JavaScript/Class/' },
-          ]
-        },
-        {
-          text: '2 - 执行机制',
-          collapsible: true,
-          children: [
-            {
-              text: '2.1 - 异步',
-              collapsible: false,
-              children: [
-                { text: '2.2.1 - 简介', link: 'JavaScript/Async/' },
-                { text: '2.2.2 - 事件循环', link: 'JavaScript/EventLoop/' },
-                { text: '2.2.3 - 回调地狱', link: 'JavaScript/CallbackHell/' },
-              ]
-            },
+            { text: '2.1 - JS的同步和异步', link: 'JavaScript/Async/' },
+            { text: '2.2 - 事件循环', link: 'JavaScript/EventLoop/' },
+            { text: '2.3 - 回调地狱', link: 'JavaScript/CallbackHell/' },
             {
               text: '2.2 - 微任务',
               collapsible: false,
@@ -47,6 +34,7 @@ export const interviewSidebar: SidebarObjectOptions = {
             { text: '3.1 - ECMAScript 6', link: 'JavaScript/ES6/' },
           ]
         },
+        { text: '4 - 类继承', link: 'JavaScript/Class/' },
       ]
     },
     {

@@ -111,12 +111,13 @@ export default hopeTheme({
       codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
       include: true,
       mark: true,
       footnote: true,
+      figure: true, // 启用 figure
+      imgLazyload: true, // 启用图片懒加载
+      imgMark: true, // 启用图片标记
+      imgSize: true, // 启用图片大小
       stylize: [
         {
           matcher: "Recommended",
