@@ -108,7 +108,9 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      codetabs: true,
+      tabs: true, // 选项卡支持
+      hint: true, // 提示容器
+      codetabs: true, // 代码块分组
       component: true,
       demo: true,
       include: true,

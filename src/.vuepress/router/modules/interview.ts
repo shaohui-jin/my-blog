@@ -13,17 +13,9 @@ export const interviewSidebar: SidebarObjectOptions = {
           text: '2 - 同步、异步',
           collapsible: true,
           children: [
-            { text: '2.1 - JS的同步和异步', link: 'JavaScript/Async/' },
+            { text: '2.1 - 同步异步的纠葛', link: 'JavaScript/Async/' },
             { text: '2.2 - 事件循环', link: 'JavaScript/EventLoop/' },
-            { text: '2.3 - 回调地狱', link: 'JavaScript/CallbackHell/' },
-            {
-              text: '2.2 - 微任务',
-              collapsible: false,
-              children: [
-                { text: '2.2.1 - 简介', link: 'JavaScript/MicroTasks/' },
-                { text: '2.2.2 - Promise,Async Await', link: 'JavaScript/Promise/' },
-              ]
-            },
+            { text: '2.3 - 微任务', link: 'JavaScript/MicroTasks/' },
             { text: '2.3 - 宏任务', link: 'JavaScript/MacroTasks/' },
           ]
         },
