@@ -1,5 +1,5 @@
 ---
-title: 同步异步的纠葛
+title: 进程模型与事件循环
 lang: zh-CN
 date: 2024-03-23 10:24:33
 permalink: /Interview/JavaScript/Async/
@@ -152,6 +152,68 @@ JS是一门单线程的语言，这是因为它运行在浏览器的 **渲染主
 
 但浏览器 **必须** 有一个**微队列**，微队列的任务一定具有 **最高的优先级**，必须优先调度执行。
 
+#### 案例一
+
+```js
+setTimeout(function(){
+    console.log('定时器开始啦')
+});
+
+new Promise(function(resolve){
+    console.log('马上执行for循环啦');
+    for(let i = 0; i < 10000; i++){
+        i == 99 && resolve();
+    }
+}).then(function(){
+    console.log('执行then函数啦')
+});
+
+console.log('代码执行结束');
+```
+
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/EventLoop/事件循环案例1.3ye7lwc6j0.webp "事件循环案例1" =800x)
+
+#### 案例二
+
+```js
+console.log('1');
+setTimeout(function() {
+  console.log('2');
+  process.nextTick(function() {
+    console.log('3');
+  })
+  new Promise(function(resolve) {
+    console.log('4');
+    resolve();
+  }).then(function() {
+    console.log('5')
+  })
+})
+process.nextTick(function() {
+  console.log('6');
+})
+new Promise(function(resolve) {
+  console.log('7');
+  resolve();
+}).then(function() {
+  console.log('8')
+})
+
+setTimeout(function() {
+  console.log('9');
+  process.nextTick(function() {
+    console.log('10');
+  })
+  new Promise(function(resolve) {
+    console.log('11');
+    resolve();
+  }).then(function() {
+    console.log('12')
+  })
+})
+```
+
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/EventLoop/事件循环案例2.8z6adgaf6s.webp "事件循环案例2" =800x)
 
 ### JS 中的计时器能做到精确计时吗 (重点)
 

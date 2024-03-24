@@ -9,16 +9,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/Interview/JavaScript/(.*)$',
       children: [
         { text: '1 - 闭包', link: 'JavaScript/Closure/' },
-        {
-          text: '2 - 同步、异步',
-          collapsible: true,
-          children: [
-            { text: '2.1 - 同步异步的纠葛', link: 'JavaScript/Async/' },
-            { text: '2.2 - 事件循环', link: 'JavaScript/EventLoop/' },
-            { text: '2.3 - 微任务', link: 'JavaScript/MicroTasks/' },
-            { text: '2.3 - 宏任务', link: 'JavaScript/MacroTasks/' },
-          ]
-        },
+        { text: '2 - 进程模型与事件循环', link: 'JavaScript/Async/' },
         {
           text: '3 - ECMAScript',
           collapsible: true,

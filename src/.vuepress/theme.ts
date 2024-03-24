@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { nav, sidebar } from "./router";
-import { MR_HOPE_AVATAR } from "./logo";
+// import { MR_HOPE_AVATAR } from "./logo";
 
 export default hopeTheme({
   hostname: "https://shaohui-jin.github.io",
@@ -136,7 +136,6 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
       vPre: true,
     },
   },
