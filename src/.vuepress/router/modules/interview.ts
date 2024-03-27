@@ -9,15 +9,10 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/Interview/JavaScript/(.*)$',
       children: [
         { text: '1 - 闭包', link: 'JavaScript/Closure/' },
-        { text: '2 - 进程模型与事件循环', link: 'JavaScript/Async/' },
-        {
-          text: '3 - ECMAScript',
-          collapsible: true,
-          children: [
-            { text: '3.1 - ECMAScript 6', link: 'JavaScript/ES6/' },
-          ]
-        },
-        { text: '4 - 类继承', link: 'JavaScript/Class/' },
+        { text: '2 - 浏览器进程模型', link: 'JavaScript/BrowserProcessModel/' },
+        { text: '3 - 浏览器渲染原理', link: 'JavaScript/BrowserRenderingPrinciples/' },
+        { text: '4 - ECMAScript 6', link: 'JavaScript/ES6/' },
+        { text: '5 - 类继承', link: 'JavaScript/Class/' },
       ]
     },
     {

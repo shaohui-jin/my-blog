@@ -1,23 +1,21 @@
 ---
-title: 进程模型与事件循环
+title: 浏览器进程模型
 lang: zh-CN
 date: 2024-03-23 10:24:33
-permalink: /Interview/JavaScript/Async/
+permalink: /Interview/JavaScript/BrowserProcessModel/
 category: 
   - JavaScript
 tag: 
   - JavaScript
 ---
 
-## 浏览器进程模型
-
-### 何为进程 
+## 何为进程 
 
 程序运行需要有他自己专属的 **内存空间**，这块内存空间可以理解为进程。
 
 每个应用至少有一个进程，进程之间相互独立，即便要通信，也要双方同意。
 
-### 何为线程
+## 何为线程
 
 有了进程后，就可以运行程序的代码了。
 
@@ -29,7 +27,7 @@ tag:
 
 ![](https://shaohui-jin.github.io/picx-images-hosting/blog/EventLoop/进程与线程.1e8d7pc5hg.webp "进程与线程" =800x)
 
-### 浏览器有哪些进程和线程
+## 浏览器有哪些进程和线程
 
 浏览器是个多进程多线程的应用程序，内部工作极其复杂。
 
