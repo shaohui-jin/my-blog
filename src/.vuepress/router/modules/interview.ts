@@ -8,7 +8,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       icon: 'iconfont icon-javascript',
       activeMatch: '/Interview/JavaScript/(.*)$',
       children: [
-        { text: '1 - 闭包', link: 'JavaScript/Closure/' },
+        { text: '1 - 闭包以及内存泄漏原因', link: 'JavaScript/Closure/' },
         { text: '2 - 浏览器进程模型', link: 'JavaScript/BrowserProcessModel/' },
         { text: '3 - 浏览器渲染原理', link: 'JavaScript/BrowserRenderingPrinciples/' },
         { text: '4 - ECMAScript 6', link: 'JavaScript/ES6/' },
