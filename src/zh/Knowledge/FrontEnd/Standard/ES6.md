@@ -2,7 +2,7 @@
 title: ECMAScript 6
 lang: zh-CN
 date: 2022-06-01 11:21:30
-permalink: /Interview/JavaScript/ES6/
+permalink: /JavaScript/ES6/
 icon: es6
 category: 
   - ECMAScript

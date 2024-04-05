@@ -1,5 +1,5 @@
 ---
-title: 工具类
+title: Java 工具类
 lang: zh-CN
 date: 2023-02-24 15:34:43
 permalink: /Java/Utils/

@@ -1,8 +1,8 @@
 ---
-title: 生命周期
+title: Vue生命周期
 lang: zh-CN
 date: 2023-2-22 15:55:13
-permalink: /FrontEnd/Vue/LifeCycle/
+permalink: /Vue/LifeCycle/
 category: 
   - VUE
 tag: 

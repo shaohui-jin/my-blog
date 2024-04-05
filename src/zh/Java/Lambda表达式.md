@@ -1,5 +1,5 @@
 ---
-title: Lambda
+title: Lambda表达式
 lang: zh-CN
 date: 2022-05-16 11:26:43
 permalink: /Java/Lambda/

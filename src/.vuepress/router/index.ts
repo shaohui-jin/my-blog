@@ -1,5 +1,5 @@
 import { AutoLinkOptions } from 'vuepress-theme-hope';
-import { frontEndSidebar, interviewSidebar, nginxSidebar } from './modules';
+import { frontEndSidebar, interviewSidebar, javaSidebar, nginxSidebar } from './modules';
 
 // 重新调整sidebar的侧边栏类型
 type SidebarItem = AutoLinkOptions | Omit<AutoLinkOptions, 'link'> | string;
@@ -8,10 +8,10 @@ type SidebarObjectOptions = Record<string, SidebarItem[] | "structure" | "headin
 export const nav: AutoLinkOptions[] = [
   { text: '首页', link: '/' },
   { text: '前端知识库', link: '/FrontEnd/Standard/HTML/', activeMatch: '/FrontEnd/(.*)$', },
-  { text: '后端知识库', link: '/Java/Stream/', activeMatch: '/Java/(.*)$', icon: 'iconfont icon-java' },
+  { text: 'Java', link: '/Java/Stream/', activeMatch: '/Java/(.*)$', icon: 'iconfont icon-java' },
   { text: '设计模式', link: '/DesignPattern/Info/', activeMatch: '/DesignPattern/(.*)$', icon: 'iconfont icon-note' },
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
-  { text: '自信面试', link: '/Interview/JavaScript/Closure/',  activeMatch: '/Interview/(.*)$', icon: 'iconfont icon-mian-shi-ti' },
+  { text: '自信面试', link: '/JavaScript/Closure/',  activeMatch: '/Interview/(.*)$', icon: 'iconfont icon-mian-shi-ti' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
   { text: 'Nginx', link: '/Nginx/Function/',  activeMatch: '/Nginx/(.*)$', icon: 'iconfont icon-nginx' },
   { text: '服务器', link: '/Server/', icon: 'iconfont icon-linux' },
@@ -22,12 +22,7 @@ export const sidebar: SidebarObjectOptions = {
   ...frontEndSidebar,
   ...interviewSidebar,
   ...nginxSidebar,
-  '/Java/': [
-    // { text: '后端知识库', icon: 'iconfont icon-java' },
-    'Stream/', // Stream
-    'Lambda/', // Lambda
-    'Utils/', // Utils
-  ],
+  ...javaSidebar,
   '/DesignPattern/': [
     // { text: '设计模式', icon: 'iconfont icon-note' },
     'Info/', // 简单介绍

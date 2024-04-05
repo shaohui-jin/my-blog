@@ -8,7 +8,7 @@ export const frontEndSidebar: SidebarObjectOptions = {
       collapsible: true,
       children: [
         { text: '1.1 - HTML规范指南', link: 'Standard/HTML/' },
-        { text: '1.3 - RESTful API', link: 'Standard/RESTful/' },
+        { text: '1.2 - RESTful API', link: 'Standard/RESTful/' },
       ]
     },
     {
@@ -93,8 +93,7 @@ export const frontEndSidebar: SidebarObjectOptions = {
           text: '6.1 - 知识模块',
           collapsible: true,
           children: [
-            { text: '6.1.1 - 生命周期', link: 'Vue/LifeCycle/' },
-            { text: '6.1.2 - 面试问题', link: 'Vue/Question/' },
+            { text: '6.1.1 - 面试问题', link: 'Vue/Question/' },
           ]
         },
         {
