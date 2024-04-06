@@ -1,17 +1,17 @@
 import { SidebarObjectOptions } from '../interface';
 
 export const interviewSidebar: SidebarObjectOptions = {
-  '/': [
+  '': [
     {
       text: 'JavaScript',
       // collapsible: true,
       icon: 'iconfont icon-javascript',
       activeMatch: '/JavaScript/(.*)$',
       children: [
-        { text: '1 - 闭包以及内存泄漏原因', link: 'JavaScript/Closure/' },
-        { text: '2 - 浏览器进程模型', link: 'JavaScript/BrowserProcessModel/' },
-        { text: '3 - 浏览器渲染原理', link: 'JavaScript/BrowserRenderingPrinciples/' },
-        { text: '4 - ECMAScript 6', link: 'JavaScript/ES6/' },
+        { text: '1 - 闭包以及内存泄漏原因', link: '/JavaScript/Closure/' },
+        { text: '2 - 浏览器进程模型', link: '/JavaScript/BrowserProcessModel/' },
+        { text: '3 - 浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' },
+        { text: '4 - ECMAScript 6', link: '/JavaScript/ES6/' },
       ]
     },
     {
@@ -20,8 +20,8 @@ export const interviewSidebar: SidebarObjectOptions = {
       icon: 'iconfont icon-vuejs',
       activeMatch: '/Vue/(.*)$',
       children: [
-        { text: '1 - Vue 生命周期', link: 'Vue/LifeCycle/' },
-        { text: '2 - Vue 通讯方式', link: 'Vue/Communication/' },
+        { text: '1 - Vue 生命周期', link: '/Vue/LifeCycle/' },
+        { text: '2 - Vue 通讯方式', link: '/Vue/Communication/' },
       ],
     },
     {
@@ -30,7 +30,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/React/(.*)$',
       icon: 'iconfont icon-react',
       children: [
-        { text: '1 - React 通讯方式', link: 'React/Communication/' },
+        { text: '1 - React 通讯方式', link: '/React/Communication/' },
       ],
     },
     {
@@ -39,7 +39,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/Micro/(.*)$',
       icon: 'iconfont icon-micro',
       children: [
-        { text: '1 - 乾坤', link: 'Micro/QianKun/' },
+        { text: '1 - 乾坤', link: '/Micro/QianKun/' },
       ],
     }
   ],
