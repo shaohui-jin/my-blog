@@ -15,6 +15,15 @@ export const interviewSidebar: SidebarObjectOptions = {
       ]
     },
     {
+      text: 'CSS',
+      // collapsible: true,
+      icon: 'iconfont icon-css',
+      activeMatch: '/CSS/(.*)$',
+      children: [
+        { text: '1 - CSS 盒模型', link: '/CSS/BoxModel/' },
+      ]
+    },
+    {
       text: 'Vue',
       // collapsible: true,
       icon: 'iconfont icon-vuejs',
