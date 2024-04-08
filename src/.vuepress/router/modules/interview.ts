@@ -21,6 +21,8 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/CSS/(.*)$',
       children: [
         { text: '1 - CSS 盒模型', link: '/CSS/BoxModel/' },
+        { text: '2 - CSS 选择器优先级', link: '/CSS/SelectorPriority/' },
+        { text: '3 - CSS 隐藏元素', link: '/CSS/HiddenElements/' },
       ]
     },
     {
