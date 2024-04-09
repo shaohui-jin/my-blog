@@ -23,6 +23,7 @@ export const interviewSidebar: SidebarObjectOptions = {
         { text: '1 - CSS 盒模型', link: '/CSS/BoxModel/' },
         { text: '2 - CSS 选择器优先级', link: '/CSS/SelectorPriority/' },
         { text: '3 - CSS 隐藏元素', link: '/CSS/HiddenElements/' },
+        { text: '4 - CSS 字体大小', link: '/CSS/FontSize/' },
       ]
     },
     {
