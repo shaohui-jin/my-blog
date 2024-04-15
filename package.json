@@ -13,6 +13,9 @@
   "devDependencies": {
     "@vue/repl": "^4.1.1",
     "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "markmap-lib": "^0.16.1",
+    "markmap-toolbar": "^0.16.0",
+    "markmap-view": "^0.16.0",
     "vue": "^3.4.16",
     "vuepress": "2.0.0-rc.8",
     "vuepress-theme-hope": "2.0.0-rc.30"
