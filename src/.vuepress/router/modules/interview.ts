@@ -62,7 +62,8 @@ export const interviewSidebar: SidebarObjectOptions = {
       icon: 'iconfont icon-typescript',
       activeMatch: '/TypeScript/(.*)$',
       children: [
-        { text: '└─ 说说你对 TypeScript 中类的理解', link: '/TypeScript/Class/'},
+        { text: '├─ 说说TypeScript中的类', link: '/TypeScript/Class/'},
+        { text: '└─ 说说TypeScript中的枚举类型', link: '/TypeScript/Enum/'},
       ]
     },
     {

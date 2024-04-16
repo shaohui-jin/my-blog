@@ -1,5 +1,5 @@
 ---
-title: 说说你对 TypeScript 中类的理解
+title: 说说TypeScript中的类
 lang: zh-CN
 date: 2024-04-15 14:15:31
 permalink: /TypeScript/Class/
@@ -21,7 +21,7 @@ tag:
 
 TypeScript 的 class 支持 面向对象 的 所有特性，比如 **类**、**接口** 等
 
-## 普通用法
+## 用法
 
 定义类的关键字为 **class**，后面紧跟类名，类可以包含以下几个模块（类的数据成员）：
 
@@ -46,7 +46,7 @@ class People {
 }
 ```
 
-## 继承用法
+## 继承
 
 类的 **继承** 使用 **extends** 的关键字
 
