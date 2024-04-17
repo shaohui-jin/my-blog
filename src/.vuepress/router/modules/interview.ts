@@ -63,6 +63,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/TypeScript/(.*)$',
       children: [
         { text: '├─ 说说TypeScript中的类', link: '/TypeScript/Class/'},
+        { text: '├─ 说说TypeScript中的数据类型', link: '/TypeScript/DataType/'},
         { text: '└─ 说说TypeScript中的枚举类型', link: '/TypeScript/Enum/'},
       ]
     },
