@@ -4,7 +4,6 @@ lang: zh-CN
 date: 2023-06-21 11:25:42
 permalink: /Nginx/CommonVariables/
 icon: nginx
-headerDepth: 4
 category:
   - nginx
 tag:
