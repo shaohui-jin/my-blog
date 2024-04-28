@@ -136,7 +136,8 @@ export default hopeTheme({
       sub: true,
       sup: true,
       vPre: true,
-      markmap: true
+      markmap: true,
+      mermaid: true
     },
   },
 });

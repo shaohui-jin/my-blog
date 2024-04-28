@@ -133,24 +133,6 @@ export const frontEndSidebar: SidebarObjectOptions = {
         { text: '7.1 - 浅谈12个Hooks', link: 'React/Hooks/' },
       ]
     },
-    // {
-    //   text: '8 - 微前端',
-    //   icon: 'iconfont icon-wu',
-    //   collapsible: true,
-    //   children: [
-    //     { text: '8.1 - 乾坤', link: 'Micro/QianKun/' },
-    //   ]
-    // },
-    {
-      text: '8 - 浏览器',
-      icon: 'iconfont icon-liulanqi',
-      collapsible: true,
-      children: [
-        { text: '8.1 - 浏览器缓存', link: 'Network/BrowserCache/' },
-        { text: '8.2 - 跨域', link: 'Network/CrossDomain/' },
-        { text: '8.3 - 面试问题', link: 'Network/Question/' },
-      ]
-    },
     {
       text: '9 - 性能优化',
       icon: 'iconfont icon-creative',

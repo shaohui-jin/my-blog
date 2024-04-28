@@ -26,7 +26,7 @@ tag:
 
 下面这张进行了注释官网的生命周期图。
 
-![](https://shaohui-jin.github.io/picx-images-hosting/blog/Vue/生命周期.839tggh7qp.webp "vueLifecycle" =800x)
+![](https://shaohui-jin.github.io/picx-images-hosting/blog/Vue/生命周期.5fkdt6fcci.webp "vueLifecycle" =800x)
 
 <!-- more -->
 

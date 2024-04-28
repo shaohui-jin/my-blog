@@ -43,11 +43,5 @@ export const sidebar: SidebarObjectOptions = {
     // { text: '推荐', icon: 'iconfont icon-hot' },
     'CSS/',
     'Other/',
-  ],
-  '/Network': [
-    // { text: '推荐', icon: 'iconfont icon-hot' },
-    'BrowserCache/', // 浏览器缓存
-    'CrossDomain/', // 跨域
-    'Question/', // 待整理问题
-  ],
+  ]
 }

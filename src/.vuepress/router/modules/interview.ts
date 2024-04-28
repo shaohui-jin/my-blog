@@ -53,7 +53,8 @@ export const interviewSidebar: SidebarObjectOptions = {
           collapsible: true,
           children: [
             { text: '├─ 浏览器进程模型', link: '/JavaScript/BrowserProcessModel/' },
-            { text: '└─ 浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' }
+            { text: '├─ 浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' },
+            { text: '└─ 浏览器缓存', link: '/JavaScript/BrowserCache/' }
           ]
         },
         {
@@ -91,6 +92,15 @@ export const interviewSidebar: SidebarObjectOptions = {
       icon: 'iconfont icon-react',
       children: [
         { text: '└─ React 通讯方式', link: '/React/Communication/' },
+      ],
+    },
+    {
+      text: '网络',
+      // collapsible: true,
+      activeMatch: '/Network/(.*)$',
+      icon: 'iconfont icon-liulanqi',
+      children: [
+        { text: '└─ 跨域', link: '/Network/CrossDomain/' },
       ],
     },
     {
