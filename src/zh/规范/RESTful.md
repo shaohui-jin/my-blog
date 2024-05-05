@@ -1,13 +1,13 @@
 ---
-title: RESTful API
+title: Restful Api
 lang: zh-CN
 date: 2022-05-16 11:21:30
-permalink: /FrontEnd/Standard/RESTful/
-icon: RESTfulAPI
+permalink: /Standard/RestfulApi/
+icon: RestfulApi
 category: 
-  - 前端规范
+  - Standard
 tag: 
-  - 前端规范
+  - RestfulApi
 ---
 
 ## 如何解释什么是RESTful

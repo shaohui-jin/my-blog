@@ -3,15 +3,6 @@ import { SidebarObjectOptions } from '../interface';
 export const frontEndSidebar: SidebarObjectOptions = {
   '/FrontEnd/': [
     {
-      text: '1 - 规范指南',
-      icon: 'iconfont icon-guifan',
-      collapsible: true,
-      children: [
-        { text: '1.1 - HTML规范指南', link: 'Standard/HTML/' },
-        { text: '1.2 - RESTful API', link: 'Standard/RESTful/' },
-      ]
-    },
-    {
       text: '2 - CSS',
       icon: 'iconfont icon-space_demo',
       collapsible: true,

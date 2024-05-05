@@ -12,6 +12,7 @@ export const nav: AutoLinkOptions[] = [
   { text: '设计模式', link: '/DesignPattern/Info/', activeMatch: '/DesignPattern/(.*)$', icon: 'iconfont icon-note' },
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
   { text: '自信面试', link: '/CSS/InterviewQuestionOutline/', icon: 'iconfont icon-mian-shi-ti' },
+  { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-mian-shi-ti' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
   { text: 'Nginx', link: '/Nginx/Function/',  activeMatch: '/Nginx/(.*)$', icon: 'iconfont icon-nginx' },
   { text: '服务器', link: '/Server/', icon: 'iconfont icon-linux' },
@@ -23,6 +24,9 @@ export const sidebar: SidebarObjectOptions = {
   ...interviewSidebar,
   ...nginxSidebar,
   ...javaSidebar,
+  '/InterviewQuestion/': [
+    // ''
+  ],
   '/DesignPattern/': [
     // { text: '设计模式', icon: 'iconfont icon-note' },
     'Info/', // 简单介绍

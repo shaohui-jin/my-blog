@@ -6,6 +6,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       text: 'CSS',
       icon: 'iconfont icon-css',
       activeMatch: '/CSS/(.*)$',
+      collapsible: true,
       children: [
         { text: '├─ CSS 面试题总纲', link: '/CSS/InterviewQuestionOutline/', },
         {
@@ -39,6 +40,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       text: 'JavaScript',
       icon: 'iconfont icon-javascript',
       activeMatch: '/JavaScript/(.*)$',
+      collapsible: true,
       children: [
         { text: '├─ JavaScript 面试题总纲', link: '/JavaScript/InterviewQuestionOutline/', },
         {
@@ -49,27 +51,21 @@ export const interviewSidebar: SidebarObjectOptions = {
           ]
         },
         {
-          text: '├─ 浏览器',
+          text: '└─ 浏览器',
           collapsible: true,
           children: [
             { text: '├─ 浏览器进程模型', link: '/JavaScript/BrowserProcessModel/' },
             { text: '├─ 浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' },
             { text: '└─ 浏览器缓存', link: '/JavaScript/BrowserCache/' }
           ]
-        },
-        {
-          text: '└─ ECMAScript',
-          collapsible: true,
-          children: [
-            { text: '└─ ECMAScript 6', link: '/JavaScript/ES6/' }
-          ]
-        },
+        }
       ]
     },
     {
       text: 'TypeScript',
       icon: 'iconfont icon-typescript',
       activeMatch: '/TypeScript/(.*)$',
+      collapsible: true,
       children: [
         { text: '├─ 说说TypeScript中的类', link: '/TypeScript/Class/'},
         { text: '├─ 说说TypeScript中的数据类型', link: '/TypeScript/DataType/'},
@@ -80,6 +76,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       text: 'Vue',
       icon: 'iconfont icon-vuejs',
       activeMatch: '/Vue/(.*)$',
+      collapsible: true,
       children: [
         { text: '├─ Vue 生命周期', link: '/Vue/LifeCycle/' },
         { text: '└─ Vue 通讯方式', link: '/Vue/Communication/' },
@@ -87,7 +84,7 @@ export const interviewSidebar: SidebarObjectOptions = {
     },
     {
       text: 'React',
-      // collapsible: true,
+      collapsible: true,
       activeMatch: '/React/(.*)$',
       icon: 'iconfont icon-react',
       children: [
@@ -95,8 +92,19 @@ export const interviewSidebar: SidebarObjectOptions = {
       ],
     },
     {
+      text: '规范指南',
+      icon: 'iconfont icon-guifan',
+      collapsible: true,
+      children: [
+        { text: '├─ HTML规范指南', link: '/Standard/HTML/' },
+        { text: '├─ Restful Api', link: '/Standard/RestfulApi/' },
+        { text: '└─ ECMAScript 6', link: '/Standard/ES6/' }
+
+      ]
+    },
+    {
       text: '网络',
-      // collapsible: true,
+      collapsible: true,
       activeMatch: '/Network/(.*)$',
       icon: 'iconfont icon-liulanqi',
       children: [
@@ -105,9 +113,9 @@ export const interviewSidebar: SidebarObjectOptions = {
     },
     {
       text: '微前端',
-      // collapsible: true,
+      collapsible: true,
       activeMatch: '/Micro/(.*)$',
-      icon: 'iconfont icon-micro',
+      icon: 'iconfont icon-qiankun',
       children: [
         { text: '└─ 乾坤', link: '/Micro/QianKun/' },
       ],

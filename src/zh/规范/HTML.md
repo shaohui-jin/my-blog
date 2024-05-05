@@ -1,12 +1,12 @@
 ---
 title:  HTML规范指南
 date: 2022-06-22 10:28:05
-permalink: /FrontEnd/Standard/HTML/
+permalink: /Standard/HTML/
 icon: html
 category:
-  - 前端规范
+  - Standard
 tag:
-  - 前端规范
+  - Standard
 ---
 
 
