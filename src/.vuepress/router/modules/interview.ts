@@ -42,14 +42,9 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/JavaScript/(.*)$',
       collapsible: true,
       children: [
-        { text: '├─ JavaScript 面试题总纲', link: '/JavaScript/InterviewQuestionOutline/', },
-        {
-          text: '├─ 函数',
-          collapsible: true,
-          children: [
-            { text: '└─ 闭包以及内存泄漏原因', link: '/JavaScript/Closure/' }
-          ]
-        },
+        { text: '├─ JavaScript 面试题总纲', link: '/JavaScript/InterviewQuestionOutline/' },
+        { text: '├─ AJAX', link: '/JavaScript/AJAX/' },
+        { text: '├─ 闭包以及内存泄漏原因', link: '/JavaScript/Closure/' },
         {
           text: '└─ 浏览器',
           collapsible: true,

@@ -7,7 +7,7 @@ type SidebarObjectOptions = Record<string, SidebarItem[] | "structure" | "headin
 
 export const nav: AutoLinkOptions[] = [
   { text: '首页', link: '/' },
-  { text: '前端知识库', link: '/FrontEnd/Standard/HTML/', activeMatch: '/FrontEnd/(.*)$', },
+  { text: '前端知识库', link: '/FrontEnd/JavaScript/Reflect/', activeMatch: '/FrontEnd/(.*)$', },
   { text: 'Java', link: '/Java/Stream/', activeMatch: '/Java/(.*)$', icon: 'iconfont icon-java' },
   { text: '设计模式', link: '/DesignPattern/Info/', activeMatch: '/DesignPattern/(.*)$', icon: 'iconfont icon-note' },
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
