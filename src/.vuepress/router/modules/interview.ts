@@ -11,7 +11,7 @@ export const interviewSidebar: SidebarObjectOptions = {
         { text: '├─ CSS 面试题总纲', link: '/CSS/InterviewQuestionOutline/', },
         {
           text: '├─ 理论',
-          collapsible: true,
+          // collapsible: true,
           children: [
             { text: '├─ 格式化上下文模型 FC', link: '/CSS/FormattingContext/' },
             { text: '└─ 选择器特性', link: '/CSS/SelectorFeatures/' },
@@ -19,7 +19,7 @@ export const interviewSidebar: SidebarObjectOptions = {
         },
         {
           text: '├─ 样式',
-          collapsible: true,
+          // collapsible: true,
           children: [
             { text: '├─ 字体大小', link: '/CSS/FontSize/' },
             { text: '├─ 居中定位', link: '/CSS/Center/' },
@@ -28,7 +28,7 @@ export const interviewSidebar: SidebarObjectOptions = {
         },
         {
           text: '└─ 适配方案',
-          collapsible: true,
+          // collapsible: true,
           children: [
             { text: '├─ 左定宽-右自适应方案', link: '/CSS/LeftFW-RightSA/' },
             { text: '└─ 左右定宽-中自适应方案', link: '/CSS/LeftAndRightFW-CenterSA/' },
@@ -47,7 +47,7 @@ export const interviewSidebar: SidebarObjectOptions = {
         { text: '├─ 闭包以及内存泄漏原因', link: '/JavaScript/Closure/' },
         {
           text: '└─ 浏览器',
-          collapsible: true,
+          // collapsible: true,
           children: [
             { text: '├─ 浏览器进程模型', link: '/JavaScript/BrowserProcessModel/' },
             { text: '├─ 浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' },

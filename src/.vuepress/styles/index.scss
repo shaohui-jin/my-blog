@@ -17,6 +17,16 @@ li :has(.router-link-active.router-link-exact-active.nav-link.active.sidebar-lin
   background: var(--bg-color-secondary);
 }
 
+/* `` 包括的阴影块颜色样式 */
+li > code,
+td > code,
+p > code {
+  background-color: #f9f1db;
+  color: #ee2746;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
 .vp-article-excerpt div[class*=language-] pre {
   margin: 0;
   padding: 0.85rem;
