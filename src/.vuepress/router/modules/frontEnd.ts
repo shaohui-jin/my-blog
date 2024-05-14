@@ -42,13 +42,6 @@ export const frontEndSidebar: SidebarObjectOptions = {
           ]
         },
         {
-          text: '4.2 - 跨域相关',
-          collapsible: true,
-          children: [
-            { text: '4.2.1 - Jsonp', link: 'JavaScript/Jsonp/' },
-          ]
-        },
-        {
           text: '4.3 - 小技巧',
           collapsible: true,
           children: [

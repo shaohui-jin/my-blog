@@ -17,7 +17,7 @@ li :has(.router-link-active.router-link-exact-active.nav-link.active.sidebar-lin
   background: var(--bg-color-secondary);
 }
 
-/* `` 包括的阴影块颜色样式 */
+/* `` 标识的阴影块颜色样式 */
 li > code,
 td > code,
 p > code {
@@ -25,6 +25,12 @@ p > code {
   color: #ee2746;
   margin-left: 3px;
   margin-right: 3px;
+}
+
+/* > 标识的背景色以及侧边颜色 */
+blockquote {
+  border-left: 4px solid #ef7060;
+  background: #fff9f9;
 }
 
 .vp-article-excerpt div[class*=language-] pre {
