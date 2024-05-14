@@ -103,6 +103,7 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/Network/(.*)$',
       icon: 'iconfont icon-liulanqi',
       children: [
+        { text: '├─ CSRF和XSS', link: '/Network/CSRFAndXSS/' },
         { text: '└─ 跨域', link: '/Network/CrossDomain/' },
       ],
     },
