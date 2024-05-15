@@ -1,5 +1,5 @@
 import { AutoLinkOptions } from 'vuepress-theme-hope';
-import { frontEndSidebar, interviewSidebar, javaSidebar, nginxSidebar } from './modules';
+import { frontEndSidebar, interviewSidebar, javaSidebar, nginxSidebar, tipsSidebar } from './modules';
 
 // 重新调整sidebar的侧边栏类型
 type SidebarItem = AutoLinkOptions | Omit<AutoLinkOptions, 'link'> | string;
@@ -13,6 +13,7 @@ export const nav: AutoLinkOptions[] = [
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
   { text: '自信面试', link: '/CSS/InterviewQuestionOutline/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-mian-shi-ti' },
+  { text: 'CSS 小技巧', link: '/Tips/CSS/001/', icon: 'iconfont icon-css' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
   { text: 'Nginx', link: '/Nginx/Function/',  activeMatch: '/Nginx/(.*)$', icon: 'iconfont icon-nginx' },
   { text: '服务器', link: '/Server/', icon: 'iconfont icon-linux' },
@@ -24,6 +25,7 @@ export const sidebar: SidebarObjectOptions = {
   ...interviewSidebar,
   ...nginxSidebar,
   ...javaSidebar,
+  ...tipsSidebar,
   '/InterviewQuestion/': [
     // ''
   ],
