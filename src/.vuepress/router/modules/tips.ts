@@ -11,15 +11,15 @@ export const tipsSidebar: SidebarObjectOptions = {
         {
           text: '表单相关',
           children: [
-            'CSS/001/',
-            'CSS/002/',
+            'CSS/Form/001/',
+            'CSS/Form/002/',
           ]
         },
         {
           text: '排版相关',
           children: [
-            'CSS/003/',
-            'CSS/004/'
+            'CSS/Layout/001/',
+            'CSS/Layout/002/'
           ]
         }
       ]
@@ -31,16 +31,35 @@ export const tipsSidebar: SidebarObjectOptions = {
       // collapsible: true,
       children: [
         {
-          text: '数据相关',
+          text: '数据操作相关',
           children: [
-            'JavaScript/001/',
-            'JavaScript/003/',
+            'JavaScript/Data/001/',
+            'JavaScript/Data/002/',
+            'JavaScript/Data/003/',
+          ]
+        },
+        {
+          text: '设计模式相关',
+          children: [
+            'JavaScript/DesignPatterns/001/',
+          ]
+        },
+        {
+          text: 'Vue相关',
+          children: [
+            'JavaScript/Vue/001/',
+          ]
+        },
+        {
+          text: '文件操作相关',
+          children: [
+            'JavaScript/File/001/'
           ]
         },
         {
           text: '优化相关',
           children: [
-            'JavaScript/002/',
+            'JavaScript/Optimization/001/',
           ]
         }
       ]

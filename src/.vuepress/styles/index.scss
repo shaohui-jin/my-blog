@@ -38,8 +38,9 @@ blockquote {
   padding: 0.85rem;
   width: max-content;
 }
-//.sidebar-link:hover {
-//  background: var(--bg-color-secondary);
-//}
 
+/* 移除代码展示的最大高度 */
+.vp-code-demo-display {
+  max-height: unset;
+}
 

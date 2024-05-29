@@ -13,7 +13,7 @@ export const nav: AutoLinkOptions[] = [
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
   { text: '自信面试', link: '/CSS/InterviewQuestionOutline/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-mian-shi-ti' },
-  { text: '小技巧', link: '/Tips/CSS/001/' },
+  { text: '小技巧', link: '/Tips/CSS/Form/001/' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
   { text: 'Nginx', link: '/Nginx/Function/',  activeMatch: '/Nginx/(.*)$', icon: 'iconfont icon-nginx' },
   { text: '服务器', link: '/Server/', icon: 'iconfont icon-linux' },
