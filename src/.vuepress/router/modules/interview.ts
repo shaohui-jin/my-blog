@@ -13,17 +13,9 @@ export const interviewSidebar: SidebarObjectOptions = {
           text: '├─ 理论',
           // collapsible: true,
           children: [
+            { text: '├─ 字体大小', link: '/CSS/FontSize/' },
             { text: '├─ 格式化上下文模型 FC', link: '/CSS/FormattingContext/' },
             { text: '└─ 选择器特性', link: '/CSS/SelectorFeatures/' },
-          ]
-        },
-        {
-          text: '├─ 样式',
-          // collapsible: true,
-          children: [
-            { text: '├─ 字体大小', link: '/CSS/FontSize/' },
-            { text: '├─ 居中定位', link: '/CSS/Center/' },
-            { text: '└─ 隐藏元素', link: '/CSS/HiddenElements/' },
           ]
         },
         {

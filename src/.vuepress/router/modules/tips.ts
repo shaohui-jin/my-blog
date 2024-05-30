@@ -16,10 +16,21 @@ export const tipsSidebar: SidebarObjectOptions = {
           ]
         },
         {
-          text: '排版相关',
+          text: '文本排版相关',
+          children: [
+            'CSS/TextLayout/001/',
+            'CSS/TextLayout/002/'
+          ]
+        },
+        {
+          text: '布局排版相关',
           children: [
             'CSS/Layout/001/',
-            'CSS/Layout/002/'
+            'CSS/Layout/002/',
+            'CSS/Layout/003/'
+            // { text: '├─ 字体大小', link: '/CSS/FontSize/' },
+            // { text: '├─ 居中定位', link: '/CSS/Center/' },
+            // { text: '└─ 隐藏元素', link: '/CSS/HiddenElements/' },
           ]
         }
       ]
