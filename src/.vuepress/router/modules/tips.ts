@@ -48,6 +48,7 @@ export const tipsSidebar: SidebarObjectOptions = {
             'JavaScript/Data/001/',
             'JavaScript/Data/002/',
             'JavaScript/Data/003/',
+            'JavaScript/Data/004/',
           ]
         },
         {
