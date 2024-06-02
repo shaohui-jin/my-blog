@@ -19,7 +19,8 @@ export const tipsSidebar: SidebarObjectOptions = {
           text: '文本排版相关',
           children: [
             'CSS/TextLayout/001/',
-            'CSS/TextLayout/002/'
+            'CSS/TextLayout/002/',
+            'CSS/TextLayout/003/'
           ]
         },
         {
@@ -53,6 +54,12 @@ export const tipsSidebar: SidebarObjectOptions = {
           text: '设计模式相关',
           children: [
             'JavaScript/DesignPatterns/001/',
+          ]
+        },
+        {
+          text: '交互相关',
+          children: [
+            'JavaScript/Interaction/001/',
           ]
         },
         {
