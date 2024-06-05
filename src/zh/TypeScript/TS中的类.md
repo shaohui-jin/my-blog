@@ -1,5 +1,5 @@
 ---
-title: 说说TypeScript中的类
+title: TS中的类
 lang: zh-CN
 date: 2024-04-15 14:15:31
 permalink: /TypeScript/Class/

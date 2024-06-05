@@ -1,5 +1,5 @@
 ---
-title: 说说TypeScript中的数据类型
+title: TS中的数据类型
 lang: zh-CN
 date: 2024-04-17 16:22:21
 permalink: /TypeScript/DataType/

@@ -1,5 +1,5 @@
 ---
-title: 说说TypeScript中的枚举类型
+title: TS中的枚举类型
 lang: zh-CN
 date: 2024-04-16 10:49:31
 permalink: /TypeScript/Enum/

@@ -28,7 +28,9 @@ export const tipsSidebar: SidebarObjectOptions = {
           children: [
             'CSS/Layout/001/',
             'CSS/Layout/002/',
-            'CSS/Layout/003/'
+            'CSS/Layout/003/',
+            'CSS/Layout/004/',
+            'CSS/Layout/005/',
             // { text: '├─ 字体大小', link: '/CSS/FontSize/' },
             // { text: '├─ 居中定位', link: '/CSS/Center/' },
             // { text: '└─ 隐藏元素', link: '/CSS/HiddenElements/' },

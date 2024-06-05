@@ -11,7 +11,7 @@ export const nav: AutoLinkOptions[] = [
   { text: 'Java', link: '/Java/Stream/', activeMatch: '/Java/(.*)$', icon: 'iconfont icon-java' },
   { text: '设计模式', link: '/DesignPattern/Info/', activeMatch: '/DesignPattern/(.*)$', icon: 'iconfont icon-note' },
   { text: '常用算法', link: '/Algorithm/Dichotomy/', activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
-  { text: '自信面试', link: '/CSS/InterviewQuestionOutline/', icon: 'iconfont icon-mian-shi-ti' },
+  { text: '自信面试', link: '/CSS/FontSize/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '小技巧', link: '/Tips/CSS/Form/001/' },
   { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },

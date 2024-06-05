@@ -6,13 +6,29 @@ permalink: /JavaScript/AJAX/
 headerDepth: 3
 ---
 
-## 简述
+## 全文概述
+ 
+<!-- #region info -->
 
 - 「**AJAX 全称 Asynchronous Javascript And XML**」：异步JavaScript和xml，是一种技术的统称
   - 「**XHR 全称 XmlHttpRequest**」：HTML源生实现Ajax的一种技术
   - 「**Fetch**」：基于 Promise 的一种api，在es6时提出，用于代替 XHR 实现 AJAX 的一种技术
 - 「**axios**」 是一种 使用 Promise + xhr 封装的第三方库
 - 「**umi-request**」： 基于 fetch 封装的第三方库
+
+> **上传下载进度：**
+> 1. xhr `支持上传、下载进度展示`
+> 2. fetch 不支持上传进度，`支持下载进度展示`
+> 
+> **Abort 取消机制：**
+> 1. xhr `支持终止请求`
+> 2. fetch `本身不支持`，可使用 `信号控制器 AbortController` 实现
+>
+> **Timeout 超时机制:** 
+> 1. xhr `支持超时机制`
+> 2. fetch **本身不支持**，可使用 `信号控制器 AbortController` 以及 `Promise` 实现
+
+<!-- #endregion info -->
 
 其中最常见的 XHR 实现如下：
 
@@ -48,17 +64,14 @@ export function xhrRequest(option) {
   })
   xhr.upload.addEventListener('progress', e => {
     const { loaded, total } = e
-    console.log(loaded, total) // 上传的当前数据以及下载的总数据量
+    console.log(loaded, total) // 上传的当前数据以及上传的总数据量
   })
   xhr.open(method, url)
   xhr.send()
 }
 ```
 
-### * fetch 实现 下载
-
-::: warning Fetch 不支持上传进度
-:::
+### fetch 实现 下载
 
 ```javascript {5,6,11,15}
 export function fetchRequest(option){
@@ -112,10 +125,7 @@ let promise = xhrWithCancel("/someUrl", token);
 token.cancel();
 ```
 
-### * fetch 增加 abort
-
-:::warning fetch 本身不支持 abort 处理
-:::
+### fetch 增加 abort
 
 ```javascript
 const abortController = new AbortController() // 信号控制器
@@ -151,10 +161,7 @@ xhr.open("GET", "/server", true);
 xhr.send(null);
 ```
 
-### * fetch 增加 timeout
-
-:::warning fetch 本身不支持超时 timeout 处理
-:::
+### fetch 增加 timeout
 
 ```javascript {4,7,9-12}
 export function createFetchWithTimeoutByPromiseStatus(timeout = 5000) {

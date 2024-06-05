@@ -20,7 +20,8 @@ li :has(.router-link-active.router-link-exact-active.nav-link.active.sidebar-lin
 /* `` 标识的阴影块颜色样式 */
 li > code,
 td > code,
-p > code {
+p > code,
+strong > code {
   background-color: #f9f1db;
   color: #ee2746;
   margin-left: 3px;
