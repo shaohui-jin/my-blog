@@ -12,17 +12,21 @@ tag:
 每个Vue实例再被创建之前，都会经过一系列的初始化过程，这个过程被称之为vue的生命周期。
 
 其中Vue中包含如下钩子：
-- 「**beforeCreate**」
-- 「**created**」
-- 「**beforeMount**」
-- 「**mounted**」
-- 「**beforeUpdate**」
-- 「**updated**」
-- 「**beforeDestroy**」
-- 「**destroyed**」
-- 「**activated**」：keep-alive包裹时有效
-- 「**deactivated**」：keep-alive包裹时有效
-- 「**errorCapture**」：捕获异常
+
+| VUE2 | VUE3                | 备注 |
+|------|---------------------|----|
+|  **beforeCreate**  |                     |    |
+|  **created**   |                     |    |
+|  **beforeMount**   | **onBeforeMount**   |    |
+|  **mounted**   | **onMounted**       |    |
+|  **beforeUpdate**   | **onBeforeUpdate**  |    |
+|  **updated**   | **onUpdated**       |    |
+|  **beforeDestroy**   | **onBeforeUnmount** |    |
+|  **destroyed**   | **onUnmounted**     |    |
+|  **activated**   |                     |  keep-alive包裹时有效  |
+|  **deactivated**   |                     |  keep-alive包裹时有效  |
+|  **errorCapture**   |                     |  捕获异常  |
+
 
 下面这张进行了注释官网的生命周期图。
 

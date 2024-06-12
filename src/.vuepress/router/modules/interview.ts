@@ -25,16 +25,23 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/JavaScript/(.*)$',
       collapsible: true,
       children: [
-        { text: '├─ AJAX', link: '/JavaScript/AJAX/' },
         { text: '├─ 闭包以及内存泄漏原因', link: '/JavaScript/Closure/' },
         {
-          text: '└─ 浏览器',
+          text: '├─ 浏览器',
           // collapsible: true,
           children: [
-            { text: '├─ 浏览器进程模型', link: '/JavaScript/BrowserProcessModel/' },
-            { text: '├─ 浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' },
-            { text: '└─ 浏览器缓存', link: '/JavaScript/BrowserCache/' }
+            { text: '浏览器进程模型', link: '/JavaScript/BrowserProcessModel/' },
+            { text: '浏览器渲染原理', link: '/JavaScript/BrowserRenderingPrinciples/' },
+            { text: '浏览器缓存', link: '/JavaScript/BrowserCache/' }
           ]
+        },
+        {
+          text: '└─ 网络',
+          children: [
+            '/JavaScript/AJAX/',
+            '/JavaScript/CSRFAndXSS/',
+            '/JavaScript/CrossDomain/',
+          ],
         }
       ]
     },
@@ -44,9 +51,9 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/TypeScript/(.*)$',
       collapsible: true,
       children: [
-        { text: '├─ 说说TypeScript中的类', link: '/TypeScript/Class/'},
-        { text: '├─ 说说TypeScript中的数据类型', link: '/TypeScript/DataType/'},
-        { text: '└─ 说说TypeScript中的枚举类型', link: '/TypeScript/Enum/'},
+        { text: '├─ TS中的类', link: '/TypeScript/Class/'},
+        { text: '├─ TS的数据类型', link: '/TypeScript/DataType/'},
+        { text: '└─ TS的枚举类型', link: '/TypeScript/Enum/'},
       ]
     },
     {
@@ -55,8 +62,8 @@ export const interviewSidebar: SidebarObjectOptions = {
       activeMatch: '/Vue/(.*)$',
       collapsible: true,
       children: [
-        { text: '├─ Vue 生命周期', link: '/Vue/LifeCycle/' },
-        { text: '└─ Vue 通讯方式', link: '/Vue/Communication/' },
+        { text: '├─ 生命周期', link: '/Vue/LifeCycle/' },
+        { text: '└─ 通讯方式', link: '/Vue/Communication/' },
       ],
     },
     {
@@ -78,16 +85,6 @@ export const interviewSidebar: SidebarObjectOptions = {
         { text: '└─ ECMAScript 6', link: '/Standard/ES6/' }
 
       ]
-    },
-    {
-      text: '网络',
-      collapsible: true,
-      activeMatch: '/Network/(.*)$',
-      icon: 'iconfont icon-liulanqi',
-      children: [
-        { text: '├─ CSRF和XSS', link: '/Network/CSRFAndXSS/' },
-        { text: '└─ 跨域', link: '/Network/CrossDomain/' },
-      ],
     },
     {
       text: '微前端',

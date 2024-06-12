@@ -74,7 +74,8 @@ export const tipsSidebar: SidebarObjectOptions = {
         {
           text: '文件操作相关',
           children: [
-            'JavaScript/File/001/'
+            'JavaScript/File/001/',
+            'JavaScript/File/002/'
           ]
         },
         {
