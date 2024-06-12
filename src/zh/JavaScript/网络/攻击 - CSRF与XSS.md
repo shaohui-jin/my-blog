@@ -1,10 +1,10 @@
 ---
-title: CSRF 和 XSS
+title: 攻击 - CSRF与XSS
 lang: zh-CN
 date: 2024-05-14 16:24:16
-permalink: /Network/CSRFAndXSS/
+permalink: /JavaScript/CSRFAndXSS/
 category: 
-  - Network
+  - JavaScript
 tag: 
   - Network
 headerDepth: 3
