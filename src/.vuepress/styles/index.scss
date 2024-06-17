@@ -45,3 +45,27 @@ blockquote {
   max-height: unset;
 }
 
+/*  调整vue交互样式 */
+.vue-playground-wrapper .repl-container  .vue-repl {
+  height: 660px;
+  display: block;
+  //height: revert;
+  @media (max-width: 720px) {
+    height: 330px
+  }
+  .split-pane {
+    display: flex;
+    flex-direction: column-reverse;
+    .left {
+      width: 100% !important;
+      height: 330px;
+    }
+    .right {
+      width: 100% !important;
+      height: 330px!important;
+      .output-container .iframe-container {
+      }
+    }
+  }
+}
+

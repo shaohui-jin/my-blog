@@ -72,10 +72,11 @@ export const tipsSidebar: SidebarObjectOptions = {
           ]
         },
         {
-          text: '文件操作相关',
+          text: 'WEB API相关',
           children: [
-            'JavaScript/File/001/',
-            'JavaScript/File/002/'
+            'JavaScript/WebApi/001/',
+            'JavaScript/WebApi/002/',
+            'JavaScript/WebApi/003/',
           ]
         },
         {

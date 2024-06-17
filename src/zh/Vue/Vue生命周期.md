@@ -38,12 +38,9 @@ tag:
 
 > 结合下面的Vue生命周期案例，F12看控制台更容易理解。
 
-::: vue-playground Vue 生命周期案例
-
+::: vue-playground
 @file App.vue
-
 ```vue
-
 <template>
   <div ref="lifeCycle">
     <h1>{{ message + ' --- 这是在outer HTML中的' }}</h1>
