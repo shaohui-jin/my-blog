@@ -1,5 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
+import { getDirname, path } from "vuepress/utils";
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/",
@@ -25,7 +27,9 @@ export default defineUserConfig({
       level: [1,2,3,4,5,6]
     }
   },
-
+  alias: {
+    '@src': path.resolve(__dirname, '..'),
+  },
   // Enable it with pwa
   // shouldPrefetch: false,
 });

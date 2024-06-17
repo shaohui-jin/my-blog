@@ -20,5 +20,8 @@
     "vue": "^3.4.16",
     "vuepress": "2.0.0-rc.8",
     "vuepress-theme-hope": "2.0.0-rc.30"
+  },
+  "dependencies": {
+    "package-name": "^0.1.0"
   }
 }

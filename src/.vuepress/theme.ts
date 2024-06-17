@@ -1,6 +1,8 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { nav, sidebar } from "./router";
+import { getDirname, path } from "vuepress/utils";
 
+const __dirname = getDirname(import.meta.url);
 export default hopeTheme({
   hostname: "https://shaohui-jin.github.io",
 
@@ -112,7 +114,6 @@ export default hopeTheme({
       codetabs: true, // 代码块分组
       component: true,
       demo: true,
-      include: true,
       mark: true,
       footnote: true,
       vuePlayground: true,
@@ -137,7 +138,15 @@ export default hopeTheme({
       sup: true,
       vPre: true,
       markmap: true,
-      mermaid: true
+      mermaid: true,
+      // 添加 `@src` 别名支持
+      include: {
+        resolvePath: (file) => {
+          if (file.startsWith("@src"))
+            return file.replace("@src", path.resolve(__dirname, ".."));
+          return file;
+        },
+      },
     },
   },
 });
