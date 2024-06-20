@@ -20,7 +20,8 @@ export const tipsSidebar: SidebarObjectOptions = {
           children: [
             'CSS/TextLayout/001/',
             'CSS/TextLayout/002/',
-            'CSS/TextLayout/003/'
+            'CSS/TextLayout/003/',
+            'CSS/TextLayout/004/',
           ]
         },
         {
@@ -37,6 +38,7 @@ export const tipsSidebar: SidebarObjectOptions = {
           text: '过渡动画相关',
           children: [
             'CSS/Transition/001/',
+            'CSS/Transition/002/',
           ]
         }
       ]
