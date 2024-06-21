@@ -10,6 +10,7 @@ export const tipsSidebar: SidebarObjectOptions = {
       children: [
         {
           text: '表单相关',
+          collapsible: true,
           children: [
             'CSS/Form/001/',
             'CSS/Form/002/',
@@ -17,15 +18,18 @@ export const tipsSidebar: SidebarObjectOptions = {
         },
         {
           text: '文本排版相关',
+          collapsible: true,
           children: [
             'CSS/TextLayout/001/',
             'CSS/TextLayout/002/',
             'CSS/TextLayout/003/',
             'CSS/TextLayout/004/',
+            'CSS/TextLayout/005/',
           ]
         },
         {
           text: '布局排版相关',
+          collapsible: true,
           children: [
             'CSS/Layout/001/',
             'CSS/Layout/002/',
@@ -36,9 +40,9 @@ export const tipsSidebar: SidebarObjectOptions = {
         },
         {
           text: '过渡动画相关',
+          collapsible: true,
           children: [
             'CSS/Transition/001/',
-            'CSS/Transition/002/',
           ]
         }
       ]
