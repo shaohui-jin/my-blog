@@ -92,6 +92,7 @@ export const tipsSidebar: SidebarObjectOptions = {
           text: '优化相关',
           children: [
             'JavaScript/Optimization/001/',
+            'JavaScript/Optimization/002/',
           ]
         }
       ]
