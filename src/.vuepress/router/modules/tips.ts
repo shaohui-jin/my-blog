@@ -25,6 +25,7 @@ export const tipsSidebar: SidebarObjectOptions = {
             'CSS/TextLayout/003/',
             'CSS/TextLayout/004/',
             'CSS/TextLayout/005/',
+            'CSS/TextLayout/006/',
           ]
         },
         {
