@@ -40,6 +40,13 @@ export const tipsSidebar: SidebarObjectOptions = {
           ]
         },
         {
+          text: 'Canvas相关',
+          collapsible: true,
+          children: [
+            'CSS/Canvas/001/',
+          ]
+        },
+        {
           text: '过渡动画相关',
           collapsible: true,
           children: [
