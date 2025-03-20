@@ -1,21 +1,109 @@
 ---
-title: nginx内核模块
+title: Nginx
 lang: zh-CN
 date: 2023-06-20 10:04:14
-permalink: /Nginx/Core/
-icon: nginx
-category: 
+permalink: /Promotion/Nginx/
+category:
   - nginx
-tag: 
+tag:
   - nginx
 ---
 
+### Nginx的特性
 
-内核模块用于控制 **nginx服务器** 的基本功能，内核参数的修改需要重新启动nginx才能生效？？？
+- 模块化设计、较好扩展性
 
-### 用于调试进程，定位问题的配置项
+但不支持动态模块加载，编译时启用的模块在nginx启动时会全部加载；1.9.11部分模块支持DSO
 
-#### daemon
+- 高可靠性
+
+master进程负责管理 worker进程的崩溃不会相互影响
+
+- 低内存消耗
+
+10000个keep-alive连接在nginx仅消耗2.5MB
+
+- 支持热部署
+
+不停机而更新配置文件、更换日志文件、更新服务器程序版本
+
+#### 基本HTTP功能
+
+- 提供静态文件和index文件，生成自动索引，缓存打开文件的描述符；
+- 使用缓存加快反向代理和FastCGI访问；
+- 模块化结构，过滤器包括gzip，字节range，chunk响应，XSLT，SSI(Server Side Include)，图像大小调；整，被传到后台服务器的多个SSI指令在单个页面并行处理；
+- 支持SSL和TLS SNI；
+
+#### 其他HTTP功能
+
+- 基于名称和IP的虚拟服务器；
+- 基于客户端IP和HTTP基本认证的访问控制；
+- 支持keepalive和管道连接；
+- 平滑的重新配置和在线升级；
+- 定制访问日志格式，缓存日志写入和快速日志轮询；
+- 3xx-5xx错误重定向，定制错误页面；
+- 支持url rewrite；
+- FLV流文件；
+- 速度限制；
+- 限制同时连接数或者来自同一个IP地址的请求；
+
+#### 邮件代理服务器
+
+#### 架构和可扩展性
+
+- 一个主进程和多个工作进程，工作进程以非特权用户运行；
+  主进程必须以管理员身份启动（启动<1023端口必须使用管理员身份），主进程用来监控和管理工作进程；主进程加载配置文件后，若有错误，不会影响工作进程；重新再加载正确后，新的连接建立时使用新配置。
+
+- 支持的事件机制的IO框架
+  kqueue（FreeBSD 4.1+）、epoll（Linux 2.6+）、rt signals（Linux 2.2.19+）、/dev/poll（Solaris 7 11/99+）、event ports（Solaris 10）、select以及poll（次之）；
+  众多支持的kqueue特性包括EV_CLEAR、EV_DISABLE（临时禁止事件）、NOTE_LOWAT、EV_EOF，可用数据的数量，错误代码；
+- 支持sendfile（FreeBSD 3.1+, Linux 2.2+, Mac OS X 10.5+）、sendfile64（Linux 2.4.21+）和sendfilev（Solaris 8 7/01+）；
+  用户请求响应不经过用户空间，报文在内核完成http封装直接从内核响应给客户端，避免了响应报文从内核复制到用户空间，再从用户空间复制到内核空间在响应给客户，尽可能避免数据拷贝操作。
+- 文件AIO（FreeBSD 4.3+, Linux 2.6.22+）；
+- DIRECTIO (FreeBSD 4.4+, Linux 2.4+, Solaris 2.6+, Mac OS X);
+- 支持Accept-filters（FreeBSD 4.1+, NetBSD 5.0+）和 TCP_DEFER_ACCEPT（Linux 2.4+）；
+- 支持连接过滤器，限制连接数
+- 10000个非活跃的HTTP keep-alive连接仅占用约2.5M内存；
+
+#### 模块类型
+- 核心模块
+- Standard HTTP modules 标准http模块
+- Optional HTTP modules 可选http模块
+- Mail modules 邮件模块
+- 3rd party modules 第三方模块
+
+
+### Nginx常用变量
+
+```shell
+$args                  ## URL中的查询字符串，如 http://example1.com/?foo=123&bar=blahblah中的foo=123&bar=blahblah
+$binary_remote_addr    ## 二进制形式的IP，节省空间.
+$body_bytes_sent       ## 发送的body字节数.
+$content_length        ## HTTP请求信息里的 Content-Length;
+$content_type          ## HTTP请求信息里的 Content-type
+
+$document_root         ## 当前请求的目录
+$document_uri          ## 同 $uri.
+$uri                   ## 请求的 URI，可能和最初的值有不同，比如经过重定向之类的
+$host                  ## 请求的主机
+$http_HEADER           ## 请求头
+$request_uri           ## 请求的原始URI
+$server_addr           ## 服务器地址
+$server_name           ## 服务器名称
+$server_port           ## 服务器的端口
+$server_protocol       ## 通常是 HTTP/1.0 或者 HTTP/1.1.
+$upstream_cache_status ## 缓存是否命中
+```
+
+
+### Nginx内核模块
+
+
+内核模块用于控制 **Nginx服务器** 的基本功能，内核参数的修改需要重新启动nginx才能生效？？？
+
+#### 用于调试进程，定位问题的配置项
+
+##### daemon
 
 ::: info 是否以 守护进程 方式启动nginx
 
@@ -31,7 +119,7 @@ tag:
 
 :::
 
-#### master_process 
+##### master_process 
 
 ::: info 是否以 master/worker 方式工作
 - on时（默认），以 **master/worker** 进程运行
@@ -48,7 +136,7 @@ tag:
 
 :::
 
-#### error_log 
+##### error_log 
 
 ::: info 日志文件配置
 
@@ -71,7 +159,7 @@ tag:
 
 :::
 
-#### debug_points 
+##### debug_points 
 
 ::: info 是否处理几个特殊的调试点
 
@@ -85,7 +173,7 @@ nginx 在一些关键的错误逻辑中（nginx 1.0.14版本中有8处）设置�
 
 :::
 
-#### debug_connection
+##### debug_connection
 
 ::: info 仅对指定的客户端输出debug级别的日志
 
@@ -108,7 +196,7 @@ events {
 
 :::
 
-#### worker_rlimit_core
+##### worker_rlimit_core
 
 ::: info 限制 coredump 核心转储文件的大小
 
@@ -126,7 +214,7 @@ events {
 
 :::
 
-#### working_directory
+##### working_directory
 
 ::: info 指定 coredump 文件生成目录
 
@@ -138,9 +226,9 @@ worker进程的工作目录。这个配置项的唯一用途就是设置 **cored
 
 :::
 
-### 正常运行的必备配置
+#### 正常运行的必备配置
 
-#### env
+##### env
 
 ::: info 定义环境变量
 
@@ -153,7 +241,7 @@ worker进程的工作目录。这个配置项的唯一用途就是设置 **cored
 
 :::
 
-#### include 
+##### include 
 
 ::: info 嵌入其他配置文件
 
@@ -169,7 +257,7 @@ include 配置项 可以将 **其他配置文件** 嵌入到当前的 **nginx.co
 
 :::
 
-#### pid
+##### pid
 
 ::: info 指定nginx的pid文件
 
@@ -184,7 +272,7 @@ include 配置项 可以将 **其他配置文件** 嵌入到当前的 **nginx.co
 
 :::
 
-#### user 
+##### user 
 
 ::: info 指定运行 worker进程 的用户和组
 
@@ -199,7 +287,7 @@ user用于设置 **master进程** 启动后，fork出的 **worker进程** 运行
 
 :::
 
-#### worker_rlimit_nofile
+##### worker_rlimit_nofile
 
 ::: info 指定 nginx worker进程 可以打开的最大句柄描述符个数
 
@@ -209,7 +297,7 @@ user用于设置 **master进程** 启动后，fork出的 **worker进程** 运行
 
 :::
 
-#### worker_rlimit_sigpending
+##### worker_rlimit_sigpending
 
 ::: info 指定每个用户能够发往worker的信号的数量
 
@@ -221,9 +309,9 @@ user用于设置 **master进程** 启动后，fork出的 **worker进程** 运行
 
 :::
 
-### 优化性能相关的配置
+#### 优化性能相关的配置
 
-#### worker_processes
+##### worker_processes
 
 ::: info worker线程的个数
 
@@ -247,7 +335,7 @@ worker进程的数量会直接影响性能。
 
 :::
 
-#### worker_cpu_affinity
+##### worker_cpu_affinity
 
 ::: info 绑定Nginx worker进程到指定的CPU内核
 
@@ -275,7 +363,7 @@ worker_cpu_affinity 0101 1010;
 
 :::
 
-#### ssl_engine
+##### ssl_engine
 
 ::: info SSL硬件加速
 
@@ -290,7 +378,7 @@ openssl engine -t
 
 :::
 
-#### timer_resolution
+##### timer_resolution
 
 ::: info 系统调用 gettimeofday 的执行频率
 
@@ -307,7 +395,7 @@ openssl engine -t
 
 :::
 
-#### worker_priority
+##### worker_priority
 
 ::: info Nginx worker进程优先级设置
 
@@ -328,9 +416,9 @@ nice值是进程的静态优先级，它的取值范围是–20~+19，–20是�
 
 :::
 
-### 事件类配置项
+#### 事件类配置项
 
-#### worker_connections
+##### worker_connections
 
 ::: info 每个worker的最大连接数
 
@@ -342,7 +430,7 @@ nice值是进程的静态优先级，它的取值范围是–20~+19，–20是�
 
 :::
 
-#### accept_mutex
+##### accept_mutex
 
 ::: info 是否打开accept锁
 
@@ -360,7 +448,7 @@ accept锁默认是打开的，如果关闭它，那么建立TCP连接的耗时�
 
 :::
 
-#### lock_file
+##### lock_file
 
 ::: info lock文件的路径
 
@@ -379,7 +467,7 @@ accept锁可能需要这个lock文件，如果accept锁关闭，lock_file配置�
 
 :::
 
-#### accept_mutex_delay
+##### accept_mutex_delay
 
 ::: info 使用accept锁后到真正建立连接之间的延迟时间
 
@@ -394,7 +482,7 @@ accept锁可能需要这个lock文件，如果accept锁关闭，lock_file配置�
 
 :::
 
-#### multi_accept
+##### multi_accept
 
 ::: info 批量建立新连接
 
@@ -407,7 +495,7 @@ accept锁可能需要这个lock文件，如果accept锁关闭，lock_file配置�
 
 :::
 
-#### use
+##### use
 
 ::: info 选择事件模型
 
@@ -419,26 +507,6 @@ accept锁可能需要这个lock文件，如果accept锁关闭，lock_file配置�
 对于Linux操作系统来说，可供选择的事件驱动模型有poll、select、epoll三种。epoll当然是性能最高的一种，在9.6节会解释epoll为什么可以处理大并发连接。
 
 :::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

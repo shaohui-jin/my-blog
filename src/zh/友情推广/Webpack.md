@@ -2,7 +2,7 @@
 title: 手写Webpack
 lang: zh-CN
 date: 2022-05-27 15:54:30
-permalink: /FrontEnd/Configuration/Webpack/
+permalink: /Promotion/Webpack/
 isOriginal: true # 当前文章是否为原创
 sticky: true  # 是否在列表中置顶 ，数字越大，排名越靠前
 star: true # 是否收藏在博客主题的文章列表中。数字越大，排名越靠前

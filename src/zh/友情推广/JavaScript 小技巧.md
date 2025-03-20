@@ -2,7 +2,7 @@
 title: JavaScript 小技巧
 lang: zh-CN
 date: 2023-02-28 10:37:02
-permalink: /FrontEnd/JavaScript/Skill/
+permalink: /Promotion/JavaScript-Skill/
 icon: skill
 category: 
   - JavaScript
