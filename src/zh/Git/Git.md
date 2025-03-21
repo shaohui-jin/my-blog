@@ -2,8 +2,7 @@
 title: Git
 lang: zh-CN
 date: 2022-05-16 11:21:30
-permalink: /Git/
-icon: git
+permalink: /Promotion/Git/
 category: 
   - Git
 tag: 

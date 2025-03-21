@@ -14,7 +14,6 @@ export const nav: AutoLinkOptions[] = [
   { text: '自信面试', link: '/CSS/FontSize/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '小技巧', link: '/Tips/CSS/Form/001/' },
-  { text: 'Git', link: '/Git/', icon: 'iconfont icon-git' },
   { text: '文章推广', link: '/Promotion/Server/',  activeMatch: '/Promotion/(.*)$' },
   { text: '推荐', link: '/Recommend/CSS/', activeMatch: '/Recommend/(.*)$', icon: 'iconfont icon-hot' }
 ]
@@ -34,6 +33,7 @@ export const sidebar: SidebarObjectOptions = {
     'QianKun/',
     'Webpack/',
     'JavaScript-Skill/',
+    'Git/',
   ],
   '/DesignPattern/': [
     // { text: '设计模式', icon: 'iconfont icon-note' },
