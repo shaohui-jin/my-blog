@@ -4,105 +4,29 @@ export const tipsSidebar: SidebarObjectOptions = {
   '/Tips/': [
     {
       text: 'CSS',
-      icon: 'iconfont icon-css',
+      // icon: 'iconfont icon-css',
       activeMatch: '/CSS/(.*)$',
       // collapsible: true,
       children: [
-        {
-          text: '表单相关',
-          collapsible: true,
-          children: [
-            'CSS/Form/001/',
-            'CSS/Form/002/',
-          ]
-        },
-        {
-          text: '文本排版相关',
-          collapsible: true,
-          children: [
-            'CSS/TextLayout/001/',
-            'CSS/TextLayout/002/',
-            'CSS/TextLayout/003/',
-            'CSS/TextLayout/004/',
-            'CSS/TextLayout/005/',
-            'CSS/TextLayout/006/',
-          ]
-        },
-        {
-          text: '布局排版相关',
-          collapsible: true,
-          children: [
-            'CSS/Layout/001/',
-            'CSS/Layout/002/',
-            'CSS/Layout/003/',
-            'CSS/Layout/004/',
-            'CSS/Layout/005/',
-          ]
-        },
-        {
-          text: 'Canvas相关',
-          collapsible: true,
-          children: [
-            'CSS/Canvas/001/',
-          ]
-        },
-        {
-          text: '过渡动画相关',
-          collapsible: true,
-          children: [
-            'CSS/Transition/001/',
-          ]
-        }
+        { text: '表单相关', link: 'CSS/Form/' },
+        { text: '文本排版相关', link: 'CSS/TextLayout/' },
+        { text: '布局排版相关', link: 'CSS/Layout/' },
+        { text: 'Canvas相关', link: 'CSS/Canvas/' },
+        { text: '过渡动画相关', link: 'CSS/Transition/' }
       ]
     },
     {
       text: 'JavaScript',
-      icon: 'iconfont icon-javascript',
+      // icon: 'iconfont icon-javascript',
       activeMatch: '/JavaScript/(.*)$',
       // collapsible: true,
       children: [
-        {
-          text: '数据操作相关',
-          children: [
-            'JavaScript/Data/001/',
-            'JavaScript/Data/002/',
-            'JavaScript/Data/003/',
-            'JavaScript/Data/004/',
-          ]
-        },
-        {
-          text: '设计模式相关',
-          children: [
-            'JavaScript/DesignPatterns/001/',
-          ]
-        },
-        {
-          text: '交互相关',
-          children: [
-            'JavaScript/Interaction/001/',
-          ]
-        },
-        {
-          text: 'Vue相关',
-          children: [
-            'JavaScript/Vue/001/',
-          ]
-        },
-        {
-          text: 'WEB API相关',
-          children: [
-            'JavaScript/WebApi/001/',
-            'JavaScript/WebApi/002/',
-            'JavaScript/WebApi/003/',
-          ]
-        },
-        {
-          text: '优化相关',
-          children: [
-            'JavaScript/Optimization/001/',
-            'JavaScript/Optimization/002/',
-          ]
-        }
+        { text: '数据操作相关', link: 'JavaScript/Data/' },
+        { text: '设计模式相关', link: 'JavaScript/DesignPattern/' },
+        { text: '交互相关', link: 'JavaScript/Interaction/' },
+        { text: 'Vue相关', link: 'JavaScript/Vue/' },
+        { text: 'WEB API相关', link: 'JavaScript/WebApi/' },
+        { text: '优化相关', link: 'JavaScript/Optimization/' }
       ]
     },
   ],

@@ -2,7 +2,7 @@
 title: 流光按钮
 lang: zh-CN
 date: 2022-05-16 11:21:30
-permalink: /FrontEnd/CssComponent/StreamerButton
+permalink: /FrontEnd/CssComponent/StreamerButton/
 category: 
   - CSS
 tag: 

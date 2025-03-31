@@ -1,13 +1,15 @@
 ---
-title: 路由生成器
+title: Vue相关
 lang: zh-CN
 date: 2024-05-18 18:54:31
-permalink: /Tips/JavaScript/Vue/001/
+permalink: /Tips/JavaScript/Vue/
 category:
   - JavaScript
 tag:
   - Tips
 ---
+
+### 路由生成器
 
 > `import.meta.glob`: 属性返回一个字符串，表示当前模块所在的文件夹中的文件名的模式。这个字符串使用 glob 语法表示，可以使用通配符来匹配文件名。
 

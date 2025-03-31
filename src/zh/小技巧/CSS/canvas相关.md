@@ -1,13 +1,16 @@
 ---
-title: 图标描边
+title: canvas相关
 lang: zh-CN
 date: 2024-04-12 22:07:31
-permalink: /Tips/CSS/Canvas/001/
+permalink: /Tips/CSS/Canvas/
 category:
   - CSS
 tag:
   - Tips
 ---
+
+
+### 图标描边
 
 ::: vue-playground 演示
 

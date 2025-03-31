@@ -13,7 +13,6 @@ export const interviewSidebar: SidebarObjectOptions = {
           // collapsible: true,
           // children: [
         { text: '字体大小', link: '/CSS/FontSize/' },
-        { text: '格式化上下文模型 FC', link: '/CSS/FormattingContext/' },
         { text: '选择器特性', link: '/CSS/SelectorFeatures/' },
           // ]
         // }
