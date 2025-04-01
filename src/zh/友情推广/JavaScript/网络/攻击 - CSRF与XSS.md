@@ -2,7 +2,7 @@
 title: 攻击 - CSRF与XSS
 lang: zh-CN
 date: 2024-05-14 16:24:16
-permalink: /JavaScript/CSRFAndXSS/
+permalink: /Promotion/JavaScript/CSRFAndXSS/
 category: 
   - JavaScript
 tag: 

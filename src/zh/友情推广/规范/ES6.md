@@ -2,8 +2,7 @@
 title: ECMAScript 6
 lang: zh-CN
 date: 2022-06-01 11:21:30
-permalink: /Standard/ES6/
-icon: es6
+permalink: /Promotion/Standard/ES6/
 category: 
   - Standard
 tag: 

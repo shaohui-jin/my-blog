@@ -11,16 +11,35 @@ export const promotionsSidebar: SidebarObjectOptions = {
     },
     {
       text: 'JavaScript',
-      activeMatch: '/JavaScript/(.*)$',
       collapsible: false,
       children: [
-        'JavaScript-Skill/',
-
+        'JavaScript/Closure/',
+        'JavaScript/BrowserProcessModel/',
+        'JavaScript/BrowserRenderingPrinciples/',
+        'JavaScript/BrowserCache/',
+        'JavaScript/AJAX/',
+        'JavaScript/CSRFAndXSS/',
+        'JavaScript/CrossDomain/',
+        'JavaScript/TypeScript/',
       ]
     },
     {
+      text: 'Vue',
+      collapsible: false,
+      children: [
+        'Vue/LifeCycle/',
+        'Vue/Communication/',
+      ]
+    },
+    {
+      text: 'React',
+      collapsible: false,
+      children: [
+        'React/Communication/'
+      ],
+    },
+    {
       text: '运维',
-      activeMatch: '/JavaScript/(.*)$',
       collapsible: false,
       children: [
         'Server/',
@@ -30,11 +49,19 @@ export const promotionsSidebar: SidebarObjectOptions = {
     },
     {
       text: '原理',
-      activeMatch: '/JavaScript/(.*)$',
       collapsible: false,
       children: [
         'QianKun/',
         'Webpack/',
+      ]
+    },
+    {
+      text: '规范指南',
+      collapsible: false,
+      children: [
+        'Standard/HTML/',
+        'Standard/RestfulApi/',
+        'Standard/ES6/',
       ]
     },
   ],

@@ -2,7 +2,7 @@
 title: Vue双向绑定
 lang: zh-CN
 date: 2024-4-6 13:35:02
-permalink: /Vue/Reactivity/
+permalink: /Promotion/Vue/Reactivity/
 category: 
   - VUE
 tag: 

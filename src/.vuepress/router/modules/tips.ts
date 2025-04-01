@@ -21,6 +21,7 @@ export const tipsSidebar: SidebarObjectOptions = {
       activeMatch: '/JavaScript/(.*)$',
       // collapsible: true,
       children: [
+        { text: '小技巧', link: 'JavaScript/' },
         { text: '数据操作相关', link: 'JavaScript/Data/' },
         { text: '设计模式相关', link: 'JavaScript/DesignPattern/' },
         { text: '交互相关', link: 'JavaScript/Interaction/' },

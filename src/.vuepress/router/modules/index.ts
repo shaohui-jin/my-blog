@@ -11,7 +11,6 @@ import { performanceSidebar } from "./performance";
 
 const getFirstRouter = (router) => {
   const _router = Object.values(router)[0][0]
-  console.log(_router)
   const _routerKey = Object.keys(router)[0]
   return _routerKey +
     ( _router.children

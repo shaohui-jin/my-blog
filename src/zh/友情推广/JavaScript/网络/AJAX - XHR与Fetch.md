@@ -2,7 +2,7 @@
 title: AJAX - XHR与Fetch
 lang: zh-CN
 date: 2024-05-07 16:31:31
-permalink: /JavaScript/AJAX/
+permalink: /Promotion/JavaScript/AJAX/
 headerDepth: 3
 ---
 

@@ -2,7 +2,7 @@
 title: Vue 通讯方式
 lang: zh-CN
 date: 2022-06-01 16:21:10
-permalink: /Vue/Communication/
+permalink: /Promotion/Vue/Communication/
 category:
   - VUE
 tag:

@@ -2,7 +2,7 @@
 title: React 通讯方式
 lang: zh-CN
 date: 2024-03-20 10:34:17
-permalink: /React/Communication/
+permalink: /Promotion/React/Communication/
 category:
   - React
 tag:

@@ -2,8 +2,7 @@
 title: Restful Api
 lang: zh-CN
 date: 2022-05-16 11:21:30
-permalink: /Standard/RestfulApi/
-icon: RestfulApi
+permalink: /Promotion/Standard/RestfulApi/
 category: 
   - Standard
 tag: 
