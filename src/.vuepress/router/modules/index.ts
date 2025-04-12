@@ -1,5 +1,4 @@
 import { frontEndSidebar } from "./frontEnd";
-import { interviewSidebar } from "./interview";
 import { nginxSidebar } from "./nginx";
 import { javaSidebar } from "./java";
 import { tipsSidebar } from "./tips";
@@ -25,7 +24,6 @@ const getFirstRouter = (router) => {
 export {
   frontEndSidebar,
   nginxSidebar,
-  interviewSidebar,
   javaSidebar,
   tipsSidebar,
   promotionsSidebar,

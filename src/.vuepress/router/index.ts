@@ -1,7 +1,6 @@
 import { AutoLinkOptions } from 'vuepress-theme-hope';
 import {
   frontEndSidebar,
-  interviewSidebar,
   javaSidebar,
   nginxSidebar,
   tipsSidebar,
@@ -23,7 +22,6 @@ export const nav: AutoLinkOptions[] = [
   { text: 'Java', link: getFirstRouter(javaSidebar), activeMatch: '/Java/(.*)$', icon: 'iconfont icon-java' },
   { text: '设计模式', link: getFirstRouter(designPatternSidebar), activeMatch: '^/DesignPattern/(.*)$', icon: 'iconfont icon-note' },
   { text: '常用算法', link: getFirstRouter(algorithmSidebar), activeMatch: '/Algorithm/(.*)$', icon: 'iconfont icon-function' },
-  { text: '自信面试', link: getFirstRouter(interviewSidebar), icon: 'iconfont icon-mian-shi-ti' },
   { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-mian-shi-ti' },
   { text: '小技巧', link: getFirstRouter(tipsSidebar), activeMatch: '^/Tips/(.*)$' },
   { text: '文章推广', link: getFirstRouter(promotionsSidebar),  activeMatch: '/Promotion/(.*)$' },
@@ -32,7 +30,6 @@ export const nav: AutoLinkOptions[] = [
 
 export const sidebar: SidebarObjectOptions = {
   ...frontEndSidebar,
-  ...interviewSidebar,
   ...nginxSidebar,
   ...javaSidebar,
   ...tipsSidebar,
