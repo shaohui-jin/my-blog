@@ -1,7 +1,7 @@
 ---
 title: 请使用JS完成一个LRU缓存
 date: 2023-02-25 14:57:37
-permalink: /FrontEnd/JavaScript/LRU/
+permalink: /Promotion/Code/LRU/
 category:
   - JavaScript
 tag:

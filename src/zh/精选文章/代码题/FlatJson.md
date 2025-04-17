@@ -1,7 +1,7 @@
 ---
 title: 请使用JS完成一个JSON扁平化
 date: 2023-02-25 14:57:37
-permalink: /FrontEnd/JavaScript/FlatJson/
+permalink: /Promotion/Code/FlatJson/
 category:
   - JavaScript
 tag:

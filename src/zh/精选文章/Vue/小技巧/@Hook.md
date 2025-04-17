@@ -1,7 +1,7 @@
 ---
 title: 父组件里监听子组件的生命周期
 date: 2023-02-23 09:57:46
-permalink: /FrontEnd/Vue/Skill/@Hook/
+permalink: /Promotion/Vue/Skill/@Hook/
 category:
   - VUE
 tag:

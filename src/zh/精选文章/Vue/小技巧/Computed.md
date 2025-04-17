@@ -1,7 +1,7 @@
 ---
 title: Computed中使用this
 date: 2023-02-23 09:58:16
-permalink: /FrontEnd/Vue/Skill/Computed/
+permalink: /Promotion/Vue/Skill/Computed/
 category:
   - VUE
 tag:

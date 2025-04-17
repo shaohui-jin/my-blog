@@ -1,5 +1,5 @@
 ---
-title: Vue生命周期
+title: Vue 生命周期
 lang: zh-CN
 date: 2024-4-6 13:35:02
 permalink: /Promotion/Vue/LifeCycle/

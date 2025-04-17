@@ -1,7 +1,7 @@
 ---
 title: 上下文批量引入
 date: 2023-02-23 09:58:22
-permalink: /FrontEnd/Vue/Skill/Context/
+permalink: /Promotion/Vue/Skill/Context/
 category:
   - VUE
 tag:

@@ -1,7 +1,7 @@
 ---
 title: 父组件通信
 date: 2023-02-23 10:00:19
-permalink: /FrontEnd/Vue/Skill/Sync/
+permalink: /Promotion/Vue/Skill/Sync/
 category:
   - VUE
 tag:

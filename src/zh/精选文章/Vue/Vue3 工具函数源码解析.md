@@ -1,7 +1,7 @@
 ---
-title: VUE3工具函数源码解析
+title: Vue3 工具函数源码解析
 date: 2022-07-11 13:41:55
-permalink: /FrontEnd/Vue3/ToolFunction/
+permalink: /Promotion/Vue3/ToolFunction/
 category:
   - VUE
   - VUE3
@@ -23,7 +23,7 @@ typescript是通过 `readonly` 的方式来定义一个冻结对象的类型的�
 
 - 源码实现
 
-```TypeScript
+```typescript
 export declare const EMPTY_OBJ: {
     readonly [key: string]: any;
 } = __DEV__ ? Object.freeze({}) : {}
@@ -36,7 +36,7 @@ export declare const EMPTY_ARR: {
 
 - 使用案例
 
-```TypeScript
+```typescript
 let emptyObj = Object.freeze({
   props: {
     name: 'jack',
@@ -71,13 +71,13 @@ console.log('arr1[0].name', arr1[0].name) // rose
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const NOOP = () => {}
 ```
 
 - 使用案例
 
-```TypeScript
+```typescript
 let obj = function getName (cb => NOOP) {}
 ```
 
@@ -87,7 +87,7 @@ let obj = function getName (cb => NOOP) {}
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const NO = () => false
 ```
 
@@ -100,14 +100,14 @@ export const NO = () => false
 
 - 源码实现
 
-```TypeScript
+```typescript
 const objectToString = Object.prototype.toString;
 const toTypeString = (value) => objectToString.call(value);
 ```
 
 - 使用案例
 
-```TypeScript
+```typescript
 let arr = []
 let obj = {}
 let map = new Map()
@@ -124,7 +124,7 @@ console.log(toTypeString(set)) // [object Set]
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const toRawType = (value: unknown): string => {
   // extract "RawType" from strings like "[object RawType]"
   return toTypeString(value).slice(8, -1)
@@ -133,7 +133,7 @@ export const toRawType = (value: unknown): string => {
 
 - 使用案例
 
-```TypeScript
+```typescript
 const objectToString = Object.prototype.toString
 const toTypeString = (value) => objectToString.call(value)
 
@@ -153,7 +153,7 @@ console.log('num', num) // 'Number'
 
 - 源码实现
 
-```TypeScript
+```typescript
 const onRE = /^on[^a-z]/
 export const isOn = (key: string) => onRE.test(key)
 ```
@@ -164,7 +164,7 @@ export const isOn = (key: string) => onRE.test(key)
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isModelListener = (key: string) => key.startsWith('onUpdate:')
 ```
 
@@ -172,7 +172,7 @@ export const isModelListener = (key: string) => key.startsWith('onUpdate:')
 
 - 使用案例
 
-```TypeScript
+```typescript
 console.log(isModeListener('onUpdate:change'))
 ```
 
@@ -180,13 +180,13 @@ console.log(isModeListener('onUpdate:change'))
 
 - 源码实现
 
-```TypeScript
+```typescript
 const extend = Object.assign
 ```
 
 - 使用案例
 
-```TypeScript
+```typescript
 let obj1 = {name: 'jack'}
 let obj2 = {name: 'rose', age: 18}
 
@@ -202,7 +202,7 @@ console.log('obj1', obj1) // { name: 'rose', age: 18 }
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const remove = <T>(arr: T[], el: T) => {
   const i = arr.indexOf(el)
   if (i > -1) {
@@ -213,7 +213,7 @@ export const remove = <T>(arr: T[], el: T) => {
 
 - 使用案例
 
-```TypeScript
+```typescript
 let arr = [1, 2, 3]
 remove(arr, 2) // [ 1, 3 ] 'arr数据'
 console.log(arr, 'arr数据')
@@ -222,7 +222,7 @@ console.log(arr, 'arr数据')
 :::info Tips
 axios源码中 `lib/core/interceptorManager.js` , 使用以下的方式删除数组中的元素:
 
-```TypeScript
+```typescript
 InterceptorManager.prototype.eject = function eject(id) {
   if (this.handlers[id]) {
     this.handlers[id] = null;
@@ -254,7 +254,7 @@ InterceptorManager.prototype.forEach = function forEach(fn) {
 
 - 源码实现
 
-```TypeScript
+```typescript
 const hasOwnProperty = Object.prototype.hasOwnProperty
 
 /**
@@ -277,14 +277,14 @@ export const hasOwn = (
 :::info Tips
 - `is` 关键字：它被称为类型谓词，用来判断一个变量属于某个接口或类型，比如：
 
-```TypeScript
+```typescript
 const isNumber = (val: unknown): val is number => typeof val === 'number'
 const isString = (val: unknown): val is string => typeof val === 'string'
 ```
 
 - `keyof` 关键字：用于获取某种类型的所有键，其返回类型是联合类型，比如：
 
-```TypeScript
+```typescript
 interface Person {
     name: string;
     age: number;
@@ -294,7 +294,7 @@ type K = keyof Person; // "name" | "age"
 
 - `typeof` 关键字：js 中的 typeof 只能获取几种类型，而在 ts 中 typeof 用来获取一个变量声明或对象的类型，比如：
 
-```TypeScript
+```typescript
 interface Person {
   name: string;
   age: number;
@@ -309,13 +309,13 @@ type Sem = typeof sem; // -> Person
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isArray = (arg: any) : arg is any[] => Array.isArray(arg);
 ```
 
 - 使用案例
 
-```TypeScript
+```typescript
 const fakeArray = { __proto__: Array.prototype, length: 0 }
 
 console.log('isArray(fakeArray)', isArray(fakeArray)) // false
@@ -326,7 +326,7 @@ console.log('fakeArray instanceof Array', fakeArray instanceof Array) // true
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isMap = (val: unknown): val is Map<any, any> => toTypeString(val) === '[object Map]'
 export const isSet = (val: unknown): val is Set<any> => toTypeString(val) === '[object Set]'
 ```
@@ -344,7 +344,7 @@ Map 是一种 `es6` 提供的新的一种键值对数据结构的数据类型，
 > `clear` 清空所有元素， 
 > `Array.from` 转为普通的二维数组
 
-```TypeScript
+```typescript
 // 1. 定义一个函数作为键
 let fn = function func() { console.log('this is function') }
 let m = new Map([['jack', 100], [fn, '我是函数的值']]) // 形式上, Map类型是二维数组
@@ -386,7 +386,7 @@ console.log('清空后的结果', m)
 
 > `keys` 返回包含映射中 **键** 的迭代器对象，`entries` 返回包含映射中的 **键值** 的迭代器对象，`values` 返回包含映射中的 **值** 的迭代器对象，`forEach`
 
-```TypeScript
+```typescript
 let fn = function func() { console.log('this is function') }
 let m = new Map([['jack', 100], [fn, '我是函数的值']])
 m.forEach(item => {
@@ -465,7 +465,7 @@ Set类型是`es6`提供的一种新的数据类型，它允许你存入 `任意�
 > `clear` 清空所有元素， 
 > `Array.from` 转为数组
 
-```TypeScript
+```typescript
 // 1. NaN
 let set = new Set([NaN, NaN])
 // 尽管NaN !== NaN, 但是, 在Set中仍然被认为是相同的数据
@@ -507,7 +507,7 @@ console.log('set clear -->', set) // set clear --> Set {}
 
 > 主要有`keys`，`entries`，`values`，`forEach`
 
-```TypeScript
+```typescript
 // 1. keys方法
 let it = set.keys()
 console.log(it.next().value) // { name: '大明' }
@@ -560,13 +560,13 @@ set.forEach(item => {
 
 - 源码实现 <Badge text="有风险" type="error"/>
 
-```TypeScript
+```typescript
 export const isDate = (val: unknown): val is Date => val instanceof Date
 ```
 
 这么做有一定的漏洞，但一般还是可以判断
 
-```TypeScript
+```typescript
 const isDate = (val) => val instanceof Date
 let date = new Date()
 let result = isDate({ __proto__: Date.prototype, length: 0 })
@@ -577,7 +577,7 @@ console.log('result', result) // result true
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isFunction = (val: unknown): val is Function => typeof val === 'function'
 ```
 
@@ -591,12 +591,12 @@ export const isFunction = (val: unknown): val is Function => typeof val === 'fun
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isObject = (val: unknown): val is Record<any, any> => val !== null && typeof val === 'object'
 ```
 
 :::info Tips
-```TypeScript
+```typescript
 // 第1469行代码
 type Record<K extends keyof any, T> = {
     [P in K]: T;
@@ -606,7 +606,7 @@ type Record<K extends keyof any, T> = {
 
 Record使用案例:
 
-```TypeScript
+```typescript
 type Animal = 'dog' | 'cat' | 'pig'
 
 interface Info {
@@ -640,7 +640,7 @@ const animalInfo: AnimalInfo = {
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isPlainObject = (val: unknown): val is object => toTypeString(val) === '[object Object]'
 ```
 
@@ -650,7 +650,7 @@ export const isPlainObject = (val: unknown): val is object => toTypeString(val) 
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isPromise = <T = any>(val: unknown): val is Promise<T> => isObject(val) && isFunction(val.then) && isFunction(val.catch)
 ```
 
@@ -659,14 +659,14 @@ export const isPromise = <T = any>(val: unknown): val is Promise<T> => isObject(
 
 - 使用这里的泛型方式声明
 
-```TypeScript
+```typescript
 let promiseString:Promise<string> = new Promise(resolve => resolve('123'))
 let promiseNumber:Promise<number> = new Promise(resolve => resolve('123'))
 ```
 
 - 单独声明resolve方法
 
-```TypeScript
+```typescript
 let promiseString = new Promise((resolve: (params: string) => void, reject) => resolve('123'))
 ```
 :::
@@ -677,7 +677,7 @@ let promiseString = new Promise((resolve: (params: string) => void, reject) => r
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const isString = (val: unknown): val is string => typeof val === 'string'
 export const isIntegerKey = (key: unknown) =>
   isString(key) &&
@@ -691,7 +691,7 @@ isIntegerKey('888hello') // false
 parseInt 的第一个参数大家都很熟悉，就是要被转换的字符串，但是第二个出现的概率可能相对偏低，第二个表示的就是`进制`，一般`默认是10`，也就是十进制！
 这里指明进制数是为了保证在不同的环境下运行结果能保证一致！
 
-```TypeScript
+```typescript
 // 以二进制的方式解析'010'
 const result = parseInt('010', 2)
 console.log('result', result) // 2
@@ -708,7 +708,7 @@ const result = parseInt('010', 3) // 结果自然就是3
 我们知道，十进制最大的数也就是9，那么如果我要解析十进制以上的数字呢？
 最常见的就是十六进制。不错，我们会用字母代替！也就是a-z，共26个字母，那么我们大胆猜测下，最大取值，是不是就是36？
 
-```TypeScript
+```typescript
 const result = parseInt('010', 36)
 console.log('result', result) // 36
 // 那再往上加一呢:
@@ -724,7 +724,7 @@ console.log('result', result) // NaN
 
 - 源码实现
 
-```TypeScript
+```typescript
 export function makeMap(
   str: string,
   expectsLowerCase?: boolean
@@ -744,7 +744,7 @@ export function makeMap(
 
 - 使用案例
 
-```TypeScript
+```typescript
 const fn = makeMap('dog,cat,bird')
 const result1 = fn('fish')
 console.log(result1) // false, 不存在fish
@@ -783,7 +783,7 @@ console.log(result2) // true, 存在dog
 
 - 源码实现
 
-```TypeScript
+```typescript
 const cacheStringFunction = <T extends (str: string) => string>(fn: T): T => {
   const cache: Record<string, string> = Object.create(null)
   return ((str: string) => {
@@ -795,7 +795,7 @@ const cacheStringFunction = <T extends (str: string) => string>(fn: T): T => {
 
 - 使用案例
 
-```TypeScript
+```typescript
 let fn1 = cacheStringFunction((key) => {
   console.log('通过了计算得到', key + 'world')
   return key + 'world'
@@ -822,7 +822,7 @@ console.log(fn1('goodbye'))
 
 `(str:string) => string` 是符合 `T` 的类型要求，但是，`T`也可以是另一种形式的`子类`，也就无法保证和参数的类型完全一致。举个例子，假如以下函数不报错：
 
-```TypeScript
+```typescript
 let testGenerics = <T extends { length: number }>(params: T, minNum: number): T =>{
   if (params.length >= minNum) {
     return params
@@ -834,7 +834,7 @@ let testGenerics = <T extends { length: number }>(params: T, minNum: number): T 
 
 那我们直接运行下
 
-```TypeScript
+```typescript
 let data = testGenerics([1,2,3], 8)
 // 此时的data,讲道理应该是Array类型
 data.slice(0,1) // 直接报错, 因为根本就不是数组!
@@ -846,7 +846,7 @@ data.slice(0,1) // 直接报错, 因为根本就不是数组!
 
 - 源码实现
 
-```TypeScript
+```typescript
 const camelizeRE = /-(\w)/g
 export const camelize = cacheStringFunction((str: string): string => {
   return str.replace(camelizeRE, (_, c) => (c ? c.toUpperCase() : ''))
@@ -855,7 +855,7 @@ export const camelize = cacheStringFunction((str: string): string => {
 
 - 使用案例
 
-```TypeScript
+```typescript
 let str = 'on-handle-click'
 const result = camelize(str)
 console.log('result', result) // result onHandleClick
@@ -872,7 +872,7 @@ console.log('result', result) // result onHandleClick
 
 > $& 用于无分组的情况
 
-```TypeScript
+```typescript
 let str = '史记真是史家之绝唱,无韵之离骚'
 let result = str.replace('史记', '《$&》') // 这里的$&就是`史记`二字, 也就是用《史记》代替史记
 console.log(result) // 《史记》真是史家之绝唱,无韵之离骚
@@ -880,7 +880,7 @@ console.log(result) // 《史记》真是史家之绝唱,无韵之离骚
 
 > $` 匹配到的数据的左边字符串
 
-```TypeScript
+```typescript
 let str = '研究一下replace该怎么用'
 let result = str.replace('replace', ',$`前端技术') // 这里的 $` === 研究一下，也就是用 ',研究一下前端技术' 代替 'replace' 
 console.log(result) // 研究一下,研究一下前端技术该怎么用
@@ -888,14 +888,14 @@ console.log(result) // 研究一下,研究一下前端技术该怎么用
 
 > $' 和 $` 相反，代表匹配到的数据的右边字符串
 
-```TypeScript
+```typescript
 let str = '研究一下replace该怎么用'
 let result = str.replace('replace', ",vue3$',") // 此处的 $' === 该怎么用，也就是用 ',vue3该怎么用,' 代替 'replace'
 console.log(result) // 研究一下,vue3该怎么用,该怎么用
 ```
 
 > $1,$2,$3,.....$n，表示第几个分组
-```TypeScript
+```typescript
 let str = '西瓜,番薯,大番薯,咸鱼,萝卜,苹果'
 let result = str.replace(/(西瓜)(.*)(苹果)/, "$1(水果)$2$3(水果)")
 /**
@@ -908,7 +908,7 @@ console.log('result', result) // 西瓜(水果),番薯,大番薯,咸鱼,萝卜,�
 
 - 函数
 
-```TypeScript
+```typescript
 let str = '今年是2022年,时间好快'
 let result = str.replace(/(今年).+?(时间).*/g, function () {
   console.log(arguments)
@@ -925,7 +925,7 @@ let result = str.replace(/(今年).+?(时间).*/g, function () {
 可以得出结论，那就是`有分组`的情况下，第二个参数开始就是`依次展示`每次分组`匹配到的内容`。
 所以，我们回到源码中，此处的`c`，实际上就是前面说的每次匹配到的`第一个分组`，本案例中依次为：h, c两个，然后将其改为大写，直接return，就能将`-x`替换为`X`，从而实现我们的目标。
 
-```TypeScript
+```typescript
 let str = 'on-handle-click'
 let result = str.replace(/-(\w)/g, function () {
   console.log(arguments)
@@ -940,7 +940,7 @@ let result = str.replace(/-(\w)/g, function () {
 
 - 源码实现
 
-```TypeScript
+```typescript
 // compare whether a value has changed, accounting for NaN.
 export const hasChanged = (value: any, oldValue: any): boolean => !Object.is(value, oldValue)
 ```
@@ -948,7 +948,7 @@ export const hasChanged = (value: any, oldValue: any): boolean => !Object.is(val
 :::info Tips
 可能有人感到疑问，两个值是否不同还需要封装？多此一举，我直接 `a !== b` 不就行了？我们来看几个例子：
 
-```TypeScript
+```typescript
 // +0 和 -0问题
 console.log(+0 === -0) // true
 Object.is(+0, -0) // false
@@ -960,7 +960,7 @@ Object.is(NaN, NaN) // true
 
 由此可以看出，`Object.is`可以弥补 `正负0` 和 `NaN` 比较上存在的问题。MDN网站上还提供了一个`polyfill`：
 
-```TypeScript
+```typescript
 Object.is = function () {
 	 // 如果两个值不同(有可能是正负0)
   if (x === y) {
@@ -987,7 +987,7 @@ console.log('+0 === -0 -->', Object.is(+0, -0))
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const def = (obj: object, key: string | symbol, value: any) => {
   Object.defineProperty(obj, key, {
     configurable: true,
@@ -999,7 +999,7 @@ export const def = (obj: object, key: string | symbol, value: any) => {
 
 - 使用案例
 
-```TypeScript
+```typescript
 let person = {
   name: 'human',
   age: 100
@@ -1015,7 +1015,7 @@ console.log('gender --> ', person.gender) // male
 
 测试可枚举性，按照我们之前说的`for...in`，`Object.keys`，`JSON.stringify`三种方法
 
-```TypeScript
+```typescript
 // for...in
 for (let key in person) {
   console.log('key', key)
@@ -1046,7 +1046,7 @@ console.log('Object.keys(person)', Object.keys(person))
 
 - 源码实现
 
-```TypeScript
+```typescript
 export const toNumber = (val: any): any => {
   const n = parseFloat(val)
   return isNaN(n) ? val : n
@@ -1056,7 +1056,7 @@ export const toNumber = (val: any): any => {
 :::info Tips 
 isNaN一看字面意思就知道: 判断一个值是否为NaN. 但他有一些怪异行为, 例如:
 
-```TypeScript
+```typescript
 isNaN(undefined) // true
 isNaN('undefined') // true
 isNaN('haha') // true
@@ -1064,7 +1064,7 @@ isNaN('haha') // true
 
 很明显, 这个方法关心的根本不是一个值是否是NaN, 它似乎更关心一个值是否无法被转为数字! 所以, 我们有了Number.isNaN
 
-```TypeScript
+```typescript
 Number.isNaN(undefined) // false
 Number.isNaN('undefined') // false
 Number.isNaN('haha') // false

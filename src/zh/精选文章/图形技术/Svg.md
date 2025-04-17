@@ -2,11 +2,10 @@
 title: Svg 入门
 lang: zh-CN
 date: 2022-08-19 11:33:25
-permalink: /FrontEnd/Draw/Svg/
+permalink: /Promotion/Graphics/Svg/
 isOriginal: true # 当前文章是否为原创
 sticky: true  # 是否在列表中置顶 ，数字越大，排名越靠前
 star: true # 是否收藏在博客主题的文章列表中。数字越大，排名越靠前
-icon: svg
 category: 
   - Svg
 tag: 

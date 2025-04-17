@@ -1,7 +1,7 @@
 ---
 title: 懒加载
 date: 2023-02-23 09:59:37
-permalink: /FrontEnd/Vue/Skill/LazyLoader/
+permalink: /Promotion/Vue/Skill/LazyLoader/
 category:
   - VUE
 tag:

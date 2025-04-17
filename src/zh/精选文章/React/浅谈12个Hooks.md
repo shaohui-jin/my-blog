@@ -1,7 +1,7 @@
 ---
 title: 浅谈12个Hooks
 date: 2022-06-27 10:14:21
-permalink: /FrontEnd/React/Hooks/
+permalink: /Promotion/React/Hooks/
 author: 小杜杜 - 掘金
 category:
   - React
