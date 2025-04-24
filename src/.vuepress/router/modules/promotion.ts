@@ -61,23 +61,6 @@ export const promotionsSidebar: SidebarObjectOptions = {
       ],
     },
     {
-      text: '图形技术',
-      collapsible: false,
-      children: [
-        'Graphics/Svg/',
-        'Graphics/Canvas/'
-      ]
-    },
-    {
-      text: '运维',
-      collapsible: false,
-      children: [
-        'Server/',
-        'Nginx/',
-        'Git/',
-      ]
-    },
-    {
       text: '原理',
       collapsible: false,
       children: [
@@ -86,8 +69,25 @@ export const promotionsSidebar: SidebarObjectOptions = {
       ]
     },
     {
+      text: '图形技术',
+      collapsible: true,
+      children: [
+        'Graphics/Svg/',
+        'Graphics/Canvas/'
+      ]
+    },
+    {
+      text: '运维',
+      collapsible: true,
+      children: [
+        'Server/',
+        'Nginx/',
+        'Git/',
+      ]
+    },
+    {
       text: '规范指南',
-      collapsible: false,
+      collapsible: true,
       children: [
         'Standard/HTML/',
         'Standard/RestfulApi/',
@@ -96,10 +96,12 @@ export const promotionsSidebar: SidebarObjectOptions = {
     },
     {
       text: '代码题',
-      collapsible: false,
+      collapsible: true,
       children: [
         'Code/LRU/',
-        'Code/FlatJson/'
+        'Code/FlatJson/',
+        'Code/PromiseImg/',
+        'Code/PromiseAjax/'
       ]
     },
   ],

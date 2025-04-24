@@ -7,22 +7,7 @@ export const frontEndSidebar: SidebarObjectOptions = {
       collapsible: true,
       children: [
         { text: '面试问题', link: 'JavaScript/Question/' },
-      ]
-    },
-    {
-      text: 'VUE',
-      collapsible: true,
-      children: [
-        {
-          text: '知识模块',
-          collapsible: true,
-          children: [
-            { text: '面试问题', link: 'Vue/Question/' },
-          ]
-        },
-
-
-
+        { text: '面试问题', link: 'Vue/Question/' },
       ]
     },
     {
