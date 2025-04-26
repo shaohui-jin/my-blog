@@ -1,4 +1,3 @@
-import { frontEndSidebar } from "./frontEnd";
 import { nginxSidebar } from "./nginx";
 import { javaSidebar } from "./java";
 import { tipsSidebar } from "./tips";
@@ -22,7 +21,6 @@ const getFirstRouter = (router) => {
 )
 }
 export {
-  frontEndSidebar,
   nginxSidebar,
   javaSidebar,
   tipsSidebar,
