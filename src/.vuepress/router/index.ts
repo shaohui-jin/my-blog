@@ -23,7 +23,7 @@ export const nav: AutoLinkOptions[] = [
   { text: 'Java', link: getFirstRouter(javaSidebar), activeMatch: '/Java/(.*)$' },
   { text: '设计模式', link: getFirstRouter(designPatternSidebar), activeMatch: '^/DesignPattern/(.*)$' },
   { text: '常用算法', link: getFirstRouter(algorithmSidebar), activeMatch: '/Algorithm/(.*)$' },
-  { text: '小技巧', link: getFirstRouter(tipsSidebar), activeMatch: '^/Tips/(.*)$' },
+  { text: '代码仓', link: getFirstRouter(tipsSidebar), activeMatch: '^/Tips/(.*)$' },
   { text: '推荐', link: getFirstRouter(recommendSidebar), activeMatch: '/Recommend/(.*)$' }
 ]
 

@@ -2,6 +2,10 @@ import { SidebarObjectOptions } from '../interface';
 
 export const tipsSidebar: SidebarObjectOptions = {
   '/Tips/': [
+    'Vue/UseTheme/',
+    'Vue/UseWorker/',
+    'Vue/UsePerformance/',
+    'Vue/UseIdelLoad/',
     {
       text: 'CSS',
       // icon: 'iconfont icon-css',
@@ -27,7 +31,6 @@ export const tipsSidebar: SidebarObjectOptions = {
         { text: '交互相关', link: 'JavaScript/Interaction/' },
         { text: 'Vue相关', link: 'JavaScript/Vue/' },
         { text: 'WEB API相关', link: 'JavaScript/WebApi/' },
-        { text: '优化相关', link: 'JavaScript/Optimization/' }
       ]
     },
   ],
