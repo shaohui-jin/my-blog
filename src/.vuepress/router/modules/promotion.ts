@@ -31,29 +31,10 @@ export const promotionsSidebar: SidebarObjectOptions = {
         'Vue/Communication/',
         'Vue3/ToolFunction/',
         {
-          text: '第三方库拓展',
-          collapsible: true,
-          children: [
-            { text: '状态仓库持久化', link: 'Vue/ThirdExpand/vuex/' },
-          ]
-        },
-        {
           text: '指令',
           collapsible: true,
           children: [
             { text: '点击组件外部', link: 'Vue/Directive/ClickOutside/' },
-          ]
-        },
-        {
-          text: '小技巧',
-          collapsible: true,
-          children: [
-            { text: '懒加载', link: 'Vue/Skill/LazyLoader/' },
-            { text: '上下文批量引入', link: 'Vue/Skill/Context/' },
-            { text: '父组件里监听子组件的生命周期', link: 'Vue/Skill/@Hook/' },
-            { text: 'Computed中使用this', link: 'Vue/Skill/Computed/' },
-            { text: '父组件通信', link: 'Vue/Skill/Sync/' },
-            { text: '插槽', link: 'Vue/Skill/Slot/' },
           ]
         },
       ]

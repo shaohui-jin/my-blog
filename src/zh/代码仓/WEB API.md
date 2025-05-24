@@ -1,8 +1,8 @@
 ---
-title: WEB API相关
+title: WEB API
 lang: zh-CN
 date: 2024-05-18 18:54:31
-permalink: /Tips/JavaScript/WebApi/
+permalink: /Tips/WebApi/
 category:
   - JavaScript
 tag:

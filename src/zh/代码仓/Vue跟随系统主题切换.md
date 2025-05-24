@@ -1,5 +1,5 @@
 ---
-title: 跟随系统主题切换
+title: Vue跟随系统主题切换
 lang: zh-CN
 date: 2025-05-22 16:26:31
 permalink: /Tips/Vue/UseTheme/

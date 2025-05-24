@@ -2,7 +2,7 @@
 title: 不指定文件创建worker
 lang: zh-CN
 date: 2025-05-22 17:17:31
-permalink: /Tips/Vue/UseWorker/
+permalink: /Tips/UseWorker/
 ---
 
 ```js

@@ -1,8 +1,8 @@
 ---
-title: 状态仓库持久化
+title: Vue状态仓库持久化
 lang: zh-CN
 date: 2025-05-06 17:14:30
-permalink: /Promotion/Vue/ThirdExpand/vuex/
+permalink: /Tips/Vue/UsePersist/
 category: 
   - VUE
 tag: 

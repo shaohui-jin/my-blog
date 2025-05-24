@@ -2,10 +2,19 @@ import { SidebarObjectOptions } from '../interface';
 
 export const tipsSidebar: SidebarObjectOptions = {
   '/Tips/': [
+    'UseWorker/',
+    'UseObserver/',
+
+    'UseFragmentDownload/',
+    'UseIdelLoad/',
+
+    'WebApi/',
+
     'Vue/UseTheme/',
-    'Vue/UseWorker/',
-    'Vue/UsePerformance/',
-    'Vue/UseIdelLoad/',
+    'Vue/UseAsyncLoad/',
+    'Vue/UseContextLoad/',
+    'Vue/UseChildLife/',
+    'Vue/UsePersist/',
     {
       text: 'CSS',
       // icon: 'iconfont icon-css',
@@ -28,9 +37,6 @@ export const tipsSidebar: SidebarObjectOptions = {
         { text: '小技巧', link: 'JavaScript/' },
         { text: '数据操作相关', link: 'JavaScript/Data/' },
         { text: '设计模式相关', link: 'JavaScript/DesignPattern/' },
-        { text: '交互相关', link: 'JavaScript/Interaction/' },
-        { text: 'Vue相关', link: 'JavaScript/Vue/' },
-        { text: 'WEB API相关', link: 'JavaScript/WebApi/' },
       ]
     },
   ],
