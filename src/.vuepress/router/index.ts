@@ -19,11 +19,11 @@ export const nav: AutoLinkOptions[] = [
   { text: '首页', link: '/' },
   { text: '每日复习', link: '/InterviewQuestion/', icon: 'iconfont icon-hot' },
   { text: '精选文章', link: getFirstRouter(promotionsSidebar), activeMatch: '/Promotion/(.*)$', icon: 'iconfont icon-hot' },
+  { text: '代码仓', link: getFirstRouter(tipsSidebar), icon: 'iconfont icon-hot', activeMatch: '^/Tips/(.*)$' },
   // { text: '前端知识库', link: getFirstRouter(frontEndSidebar), activeMatch: '/FrontEnd/(.*)$', },
   { text: 'Java', link: getFirstRouter(javaSidebar), activeMatch: '/Java/(.*)$' },
   { text: '设计模式', link: getFirstRouter(designPatternSidebar), activeMatch: '^/DesignPattern/(.*)$' },
   { text: '常用算法', link: getFirstRouter(algorithmSidebar), activeMatch: '/Algorithm/(.*)$' },
-  { text: '代码仓', link: getFirstRouter(tipsSidebar), activeMatch: '^/Tips/(.*)$' },
   { text: '推荐', link: getFirstRouter(recommendSidebar), activeMatch: '/Recommend/(.*)$' }
 ]
 
