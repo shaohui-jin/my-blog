@@ -4,7 +4,7 @@ import { getDirname, path } from "vuepress/utils";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  base: "/",
+  base: "/my-blog/",
   dest: 'public', // vuepress build 的输出目录
   lang: 'zh-CN',
   head: [
