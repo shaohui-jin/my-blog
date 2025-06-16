@@ -219,7 +219,7 @@ for (let i = 0; i < 5; i++) {
 list.appendChild(fragment) // 操作1次dom
 ```
 
-### [浏览器渲染原理](/Promotion/JavaScript/BrowserRenderingPrinciples/)
+### [浏览器渲染原理](/my-blog/Promotion/JavaScript/BrowserRenderingPrinciples/)
 
 <!-- @include: @src/zh/精选文章/JavaScript/浏览器/浏览器渲染原理.md#info -->
 
@@ -243,7 +243,7 @@ list.appendChild(fragment) // 操作1次dom
 > 
 > **Object.preventExtensions()**: **阻止`添加新属性`** 同时**防止对象的`原型被重新指定`**。
 
-### [事件循环](/Promotion/JavaScript/BrowserProcessModel/)
+### [事件循环](/my-blog/Promotion/JavaScript/BrowserProcessModel/)
 
 <!-- @include: @src/zh/精选文章/JavaScript/浏览器/浏览器进程模型.md#info -->
 

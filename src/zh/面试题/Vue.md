@@ -29,7 +29,7 @@ headerDepth: 3
 > **Extends** 只能暴露一个extends对象。
 > - extends会比Mixins先执行。执行顺序：extends > Mixins> 组件
 
-### [生命周期](/Promotion/Vue/LifeCycle/)
+### [生命周期](/my-blog/Promotion/Vue/LifeCycle/)
 
 ![](https://shaohui-jin.github.io/picx-images-hosting/blog/Vue/生命周期.5fkdt6fcci.webp "vueLifecycle" =x800)
 

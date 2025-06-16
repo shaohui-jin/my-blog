@@ -141,6 +141,7 @@ export default hopeTheme({
       mermaid: true,
       // 添加 `@src` 别名支持
       include: {
+        deep: true,
         resolvePath: (file) => {
           if (file.startsWith("@src"))
             return file.replace("@src", path.resolve(__dirname, ".."));
