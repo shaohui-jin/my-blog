@@ -13,7 +13,6 @@ headerDepth: 3
  * 1.文件查找
  *  1.1 ./a.js
  *  1.2 ./a.json
- *  1.3 ./a.node
  * 2.文件夹查找
  *  2.1 ./a/package.json main字段
  *  2.2 ./a/index.js

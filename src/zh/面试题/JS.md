@@ -194,7 +194,7 @@ function newFun(fn, ...args) {
 ### 深克隆
 
 1. 解构 `{...xxx}` 只能实现第一层，当有多层的时候还是浅拷贝
-2. `JSON.parse(JSON.stringify(xxx))`,该方法不会拷贝`内部函数`，同时如果xunhuan
+2. `JSON.parse(JSON.stringify(xxx))`,该方法不会拷贝`内部函数`，同时如果循环引用就会报错
 3. 利用`递归`实现函数
 4. `structuredClone`
 5. `MessageChannel` 广播实现`异步`克隆
