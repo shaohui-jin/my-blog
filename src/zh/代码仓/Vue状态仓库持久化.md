@@ -19,11 +19,11 @@ tag:
 
 ```javascript
 // store.js
-import { cretrStore } from 'vuex'
+import { createStore } from 'vuex'
 import counter from './counter';
 import persistPlugin from './persistPlugin'
 
-const store = cretrStore({
+const store = createStore({
   modules: {
     counter
   },
